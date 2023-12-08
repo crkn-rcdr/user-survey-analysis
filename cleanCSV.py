@@ -1,8 +1,5 @@
-import os
 import csv 
 import pandas
-import re
-import json
 import requests
 
 ids_to_ignore = [
@@ -22,7 +19,6 @@ write_list = []
 
 
 def get_location(ip_address):
-    #3f84cc6db67539
     response = requests.get(f'https://ipinfo.io/{ip_address}/json?token=3f84cc6db67539').json()
     print(response)
     loc = response.get('loc').split(",")
