@@ -1,0 +1,320 @@
+Geo,Computer Science,Digital Humanities,Education,Environment/Climate,Gender Studies,Genealogy,Geography,Health,History,Indigenous Land Claims,Indigenous Studies,Information Science,Law,Linguistics,Literature,Political Science
+"Ottawa, Canada",0,3,3,3,0,14,4,3,22,4,5,2,5,1,4,0
+"Vancouver, Canada",1,1,2,1,1,4,3,3,12,5,4,1,2,0,2,2
+"Tucson, United States",0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0
+"London, Canada",0,2,1,2,2,6,0,0,14,0,1,0,2,0,3,3
+"Gardiner, United States",0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0
+"Sacramento, United States",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+"Calgary, Canada",1,2,2,1,3,8,1,1,17,2,10,0,2,2,3,3
+"Nepean, Canada",1,0,1,1,0,1,2,0,2,0,1,0,0,0,0,1
+"Woodstock, Canada",0,0,0,0,0,2,1,0,2,0,0,0,0,0,0,0
+"Halifax, Canada",0,3,1,0,3,6,3,1,11,0,2,0,3,0,1,3
+"Victoria, Canada",0,2,0,0,0,3,1,0,4,0,1,0,0,0,0,2
+"Windsor, Canada",0,0,0,0,0,3,1,0,3,0,0,0,1,0,0,0
+"Fredericton, Canada",0,0,1,0,1,7,0,0,10,1,1,0,0,0,1,0
+"Québec, Canada",0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0
+"Toronto, Canada",8,3,7,6,0,17,9,1,52,5,11,4,10,1,4,6
+"Charlottetown, Canada",0,0,0,0,0,0,0,1,2,0,0,0,0,0,1,0
+"Liverpool, United Kingdom",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Thunder Bay, Canada",0,0,1,0,0,0,1,1,2,0,1,0,0,0,0,0
+"Burlington, Canada",0,0,2,0,1,1,2,0,3,1,2,0,0,0,1,0
+"Cornwall, Canada",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Montreal, Canada",1,1,3,0,1,8,4,0,20,1,2,0,3,1,2,3
+"Kingston, Canada",1,1,1,1,0,4,1,0,4,0,0,2,1,1,1,1
+"Niagara Falls, Canada",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Lima, Peru",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Newmarket, Canada",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Oakville, Canada",0,1,0,0,0,0,0,0,3,0,0,0,0,0,0,0
+"Lachine, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Moncton, Canada",0,0,0,0,0,2,0,0,5,0,0,0,0,0,0,0
+"Talkeetna, United States",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+"Giza, Egypt",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"Dartmouth, Canada",0,0,0,0,0,5,1,0,4,0,0,0,0,0,0,0
+"Freiburg im Breisgau, Germany",0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0
+"Eastbourne, United Kingdom",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Seattle, United States",0,0,1,1,1,2,0,0,2,0,1,0,0,0,0,0
+"Mission, Canada",0,0,0,0,1,2,0,0,2,0,0,0,0,0,0,0
+"Langley, Canada",0,0,0,1,0,1,1,1,2,2,2,0,1,1,0,0
+"Seabright, Canada",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Creston, Canada",0,0,0,0,0,0,0,0,1,0,1,0,0,1,1,1
+"Winnipeg, Canada",0,1,2,0,1,6,1,0,4,0,3,0,0,0,0,0
+"Regina, Canada",0,0,1,1,0,5,1,2,3,0,1,0,2,0,0,0
+"Guelph, Canada",1,2,0,1,1,2,0,0,5,0,2,0,1,0,1,0
+"Edmonton, Canada",0,1,1,1,0,5,1,1,8,0,3,0,0,0,0,1
+"Pittsburgh, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Venice, United States",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Brampton, Canada",0,2,1,0,1,4,1,0,4,0,0,0,1,0,0,1
+"Albany, United States",0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0
+"Hamilton, Canada",1,0,0,0,0,3,1,0,6,0,1,0,0,1,0,1
+"Grand Falls-Windsor, Canada",0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0
+"Buffalo, United States",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"St. Catharines, Canada",0,0,0,0,0,3,1,0,5,0,0,0,0,0,0,0
+"Philadelphia, United States",0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0
+"Black Mountain, United States",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Lethbridge, Canada",0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0
+"La Prairie, Canada",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"Dawson City, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Saint-Felix-de-Valois, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Livorno, Italy",0,0,1,1,0,0,1,0,1,0,1,0,0,1,1,1
+"Longueuil, Canada",0,1,1,0,0,1,1,0,4,0,0,0,0,0,0,0
+"Blanchard, United States",0,1,0,1,1,1,1,1,1,0,1,0,0,0,1,0
+"Hawkesbury, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Puslinch, Canada",0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"Hinchinbrooke, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Brockville, Canada",0,0,0,0,0,3,0,0,4,1,0,0,1,0,0,2
+"Rome, Italy",0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1
+"Bathurst, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Vanløse, Denmark",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"Glasgow, United Kingdom",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Surrey, Canada",1,1,2,1,1,1,2,1,6,2,1,1,1,1,1,2
+"Winston-Salem, United States",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Welland, Canada",0,0,0,1,1,0,0,1,1,0,0,0,0,0,1,0
+"Coquitlam, Canada",0,0,0,0,0,1,0,0,2,0,0,0,0,0,1,0
+"Cambridge, Canada",0,0,0,0,0,3,0,0,6,0,0,0,0,0,2,0
+"Oakland, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Squamish, Canada",0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0
+"Campbellford, Canada",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Eufaula, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Riverton, United States",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Richibucto, Canada",0,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0
+"Orléans, Canada",0,2,1,1,1,0,1,1,2,2,2,2,1,1,1,1
+"Peterborough, Canada",0,1,1,2,0,1,1,0,5,1,2,0,0,0,0,1
+"Sydney, Canada",0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0
+"Sebring, United States",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Whitby, Canada",0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+"Courtenay, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Miami, United States",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Pointe-Claire, Canada",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Truro, Canada",0,0,0,0,0,3,0,0,2,0,0,0,0,0,0,0
+"London, United Kingdom",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Kansas City, United States",0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0
+"Delta, Canada",0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0
+"Gloucester, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Salem, United States",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"Ellensburg, United States",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Prince George, Canada",0,0,1,0,0,0,0,0,2,0,0,0,0,0,0,0
+"Crystal Beach, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Simcoe, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Denver, United States",0,0,0,0,0,3,0,0,1,0,0,0,0,0,0,0
+"Ashford, United Kingdom",0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+"Rock Springs, United States",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"North Bay, Canada",0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Nanaimo, Canada",0,0,1,1,0,1,1,0,2,1,2,0,0,1,0,0
+"Bradford, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Traverse City, United States",0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Grand Blanc, United States",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Camrose, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Ajax, Canada",1,0,0,0,0,1,2,0,0,0,1,0,0,0,0,0
+"Kitchener, Canada",0,0,1,0,1,3,2,0,6,0,0,0,0,1,1,0
+"Sarnia, Canada",0,0,0,0,0,2,1,0,3,1,1,0,1,0,1,0
+"Saskatoon, Canada",1,1,1,2,1,2,0,1,4,1,2,1,2,2,1,1
+"St. John's, Canada",1,1,1,0,0,0,0,0,5,0,1,1,1,1,0,1
+"Oromocto, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Richmond, Canada",0,0,1,0,0,2,0,0,1,2,1,0,0,0,0,0
+"Austin, United States",0,0,0,0,0,1,0,0,2,0,0,0,0,0,0,0
+"Eastern Passage, Canada",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Copenhagen, Denmark",0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+"Clarks Summit, United States",0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+"Melbourne, Australia",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+N/A,2,3,10,5,4,53,19,4,93,10,22,3,15,4,8,11
+"Hamtramck, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Watsonville, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Napanee, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Portland, United States",0,0,0,0,0,1,0,0,2,0,0,0,0,0,0,0
+"Oxford, United Kingdom",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"Canyon Country, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Grimsby, Canada",0,0,0,0,0,3,0,0,3,0,0,0,0,0,0,0
+"Lincoln, United States",0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0
+"Corner Brook, Canada",0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+"Niles, United States",0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+"Sackville, Canada",0,0,0,0,0,1,0,0,4,0,0,0,0,0,0,0
+"Acton, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Barrie, Canada",0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+"Duncan, Canada",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Norwich, United Kingdom",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Etobicoke, Canada",0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0
+"Zwolle, The Netherlands",0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0
+"New Minas, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Poplar, United Kingdom",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Beaverton, United States",0,1,0,1,0,1,0,0,1,0,1,0,0,0,0,0
+"Kent, United States",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Drumheller, Canada",0,1,0,0,0,1,0,0,0,1,1,0,1,1,0,0
+"Palm Springs, United States",0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+"Williams Lake, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Scarborough, Canada",1,1,0,0,0,3,1,0,3,0,0,0,1,0,0,0
+"Red Deer, Canada",0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0
+"Weehawken, United States",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Port Saint Lucie, United States",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"Greater Sudbury, Canada",0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+"Stayner, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+"Temiscaming, Canada",0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0
+"Leeds, United Kingdom",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"St. Albert, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Campbell River, Canada",0,0,0,0,0,1,0,0,2,0,2,0,0,0,0,0
+"Quispamsis, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Howell, United States",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Digby, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Attleboro, United States",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Loretto, Canada",0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0
+"Dundas, Canada",0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+"Ossining, United States",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Merritt, Canada",1,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1
+"Cassopolis, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Fall River, Canada",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Stoney Creek, Canada",0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0
+"Chatham, Canada",0,0,0,0,0,1,0,0,2,0,0,0,0,0,0,0
+"Oshawa, Canada",1,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0
+"Sturgeon Falls, Canada",1,0,0,1,0,0,1,0,1,1,0,0,0,0,0,0
+"Brandon, Canada",0,0,0,0,1,1,0,0,2,1,1,0,0,0,0,0
+"Collingwood, Canada",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Woodbridge, Canada",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"Airdrie, Canada",0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0
+"Fenelon Falls, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Pensacola, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Penticton, Canada",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Summerland, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"West Paris, United States",0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"Walkerton, Canada",0,0,0,0,0,2,1,0,1,0,0,0,0,0,0,0
+"Kamloops, Canada",0,0,0,1,0,1,0,0,2,0,1,0,0,0,0,0
+"Mitchell/Ontario, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Hoffman, United States",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Saint John, Canada",0,0,0,0,0,2,0,0,2,0,0,0,0,0,0,0
+"Milverton, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Paddle Prairie, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"St. Stephen, Canada",0,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0
+"Gatineau, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Waterloo, Canada",0,0,1,1,0,0,1,0,2,0,0,0,0,0,0,0
+"Verdun, Canada",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Ellicott City, United States",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Mississauga, Canada",0,0,0,0,0,1,0,0,1,1,1,0,0,0,0,0
+"Seixal, Portugal",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"Picton, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Middle Sackville, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"North Vancouver, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Warkworth, Canada",0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+"Beaconsfield, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Listowel, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Bobcaygeon, Canada",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"Caledon, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Mutxamel, Spain",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Cochrane, Canada",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Augusta, United States",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Perth, United Kingdom",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Amsterdam, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Brant, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Pickering, Canada",0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+"Cortland, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Stratford, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Amherst, Canada",0,1,0,0,1,0,1,0,1,0,1,0,0,0,1,0
+"Bradenton, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Columbus, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Bedford, Canada",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"Washington, United States",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"Abbotsford, Canada",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Bethlehem, United States",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Lincoln Park, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Puerto Vallarta, Mexico",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Pierceland, Canada",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Brighton, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Clinton, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Laval, Canada",0,0,0,0,0,2,0,0,1,0,0,0,1,0,0,0
+"Big Beach, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Saint-Lambert, Canada",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Sevierville, United States",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Vernon River, Canada",0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0
+"Cambridge, United States",0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Bracebridge, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Sherbrooke, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Lower Sackville, Canada",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Providence, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Millbrook, Canada",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Carleton Place, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Novalja, Croatia",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Mirabel, Canada",0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+"Hammonds Plains, Canada",0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+"New York, United States",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Massey, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Stouffville, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Ashburn, United States",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Rock Hill, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Summerside, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Stockholm, Sweden",0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0
+"Rishon LeTsiyyon, Israel",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Marblehead, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Sidney, Canada",0,0,0,0,0,0,1,1,2,0,0,0,0,0,0,0
+"Boulder, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Antigonish, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Elliot Lake, Canada",0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0
+"Smithers, Canada",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Wainfleet, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Paradise, Canada",0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0
+"Qualicum Beach, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Ljubljana, Slovenia",0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0
+"Brooklyn, United States",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"North York, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Lansdale, United States",0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0
+"Keene, United States",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Coimbatore, India",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"St Helens, United Kingdom",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Castro Valley, United States",0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Omaha, United States",0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,0
+"Prince Albert, Canada",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Lakewood, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Harvey Station, Canada",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Compton, Canada",0,1,1,1,1,1,0,1,1,1,1,1,0,0,1,0
+"Cawston, Canada",0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0
+"Torbay, Canada",1,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0
+"Stevensville, Canada",0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+"Thorold, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Charlottesville, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Edinburgh, United Kingdom",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Brossard, Canada",1,1,1,1,0,0,0,0,1,0,0,1,0,0,0,0
+"Hillsborough, United States",0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0
+"Braunschweig, Germany",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"Spokane, United States",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Colorado Springs, United States",0,0,0,0,0,1,1,0,1,0,0,0,1,0,0,1
+"Richmond Hill, Canada",0,0,0,0,0,1,1,0,3,0,0,0,1,0,0,0
+"Strathroy, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Saint-Jean-sur-Richelieu, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Vankleek Hill, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Nashville, United States",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Banff, Canada",0,0,0,1,0,0,0,0,2,0,1,0,0,1,1,0
+"Lynnfield, United States",0,0,0,0,0,2,0,0,2,0,0,0,1,0,0,0
+"Niagara-on-the-Lake, Canada",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+"St. Thomas, Canada",0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0
+"Mortsel, Belgium",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"St. Marys, Canada",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+"Cheticamp, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Avon, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Nice, France",0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+"Maple, Canada",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Valleyview, Canada",0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Kentville, Canada",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Indianapolis, United States",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+"Dallas, United States",0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0
+"Vernon, Canada",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Grande Cache, Canada",0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Wasaga Beach, Canada",0,0,0,0,0,1,1,1,1,0,0,0,1,0,0,1
+"Barraute, Canada",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+"Dorval, Canada",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Stittsville, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Orillia, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Los Angeles, United States",0,0,1,0,0,1,1,1,1,1,1,0,2,1,1,1
+"Freedom, United States",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Conception Bay South, Canada",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"Dieppe, Canada",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Mestre, Italy",0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Chelsea, United Kingdom",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Puigcerdà, Spain",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"Berlin, Germany",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Brisbane, Australia",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Burnaby, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Chicago, United States",1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Kelowna, Canada",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Redlands, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Athol, United States",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Sydney, Australia",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"Bath, United Kingdom",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Parksville, Canada",0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0
+"Moser River, Canada",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Milan, Italy",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
