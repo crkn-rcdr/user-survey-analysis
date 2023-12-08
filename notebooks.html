@@ -380,8 +380,7 @@ document.write(`
                   
   <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;geo_q1.csv&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">())</span>
 </pre></div>
@@ -392,32 +391,20 @@ document.write(`
   &lt;thead&gt;
     &lt;tr style=&quot;text-align: right;&quot;&gt;
       &lt;th&gt;&lt;/th&gt;
-      &lt;th&gt;0&lt;/th&gt;
-      &lt;th&gt;1&lt;/th&gt;
-      &lt;th&gt;2&lt;/th&gt;
-      &lt;th&gt;3&lt;/th&gt;
-      &lt;th&gt;4&lt;/th&gt;
-      &lt;th&gt;5&lt;/th&gt;
-      &lt;th&gt;6&lt;/th&gt;
-      &lt;th&gt;7&lt;/th&gt;
-      &lt;th&gt;8&lt;/th&gt;
+      &lt;th&gt;Geo&lt;/th&gt;
+      &lt;th&gt;Genealogical researcher&lt;/th&gt;
+      &lt;th&gt;GLAM professional&lt;/th&gt;
+      &lt;th&gt;Government employee&lt;/th&gt;
+      &lt;th&gt;Legal researcher&lt;/th&gt;
+      &lt;th&gt;Member of the general public&lt;/th&gt;
+      &lt;th&gt;Post-secondary researcher&lt;/th&gt;
+      &lt;th&gt;Student&lt;/th&gt;
+      &lt;th&gt;Teacher&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;th&gt;0&lt;/th&gt;
-      &lt;td&gt;Geo&lt;/td&gt;
-      &lt;td&gt;Genealogical researcher&lt;/td&gt;
-      &lt;td&gt;GLAM professional&lt;/td&gt;
-      &lt;td&gt;Government employee&lt;/td&gt;
-      &lt;td&gt;Legal researcher&lt;/td&gt;
-      &lt;td&gt;Member of the general public&lt;/td&gt;
-      &lt;td&gt;Post-secondary researcher&lt;/td&gt;
-      &lt;td&gt;Student&lt;/td&gt;
-      &lt;td&gt;Teacher&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;1&lt;/th&gt;
       &lt;td&gt;Ottawa, Canada&lt;/td&gt;
       &lt;td&gt;10&lt;/td&gt;
       &lt;td&gt;5&lt;/td&gt;
@@ -429,7 +416,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;2&lt;/th&gt;
+      &lt;th&gt;1&lt;/th&gt;
       &lt;td&gt;Vancouver, Canada&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;3&lt;/td&gt;
@@ -441,7 +428,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;3&lt;/th&gt;
+      &lt;th&gt;2&lt;/th&gt;
       &lt;td&gt;Tucson, United States&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -453,7 +440,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;4&lt;/th&gt;
+      &lt;th&gt;3&lt;/th&gt;
       &lt;td&gt;London, Canada&lt;/td&gt;
       &lt;td&gt;6&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
@@ -465,7 +452,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;5&lt;/th&gt;
+      &lt;th&gt;4&lt;/th&gt;
       &lt;td&gt;Gardiner, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -477,7 +464,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;6&lt;/th&gt;
+      &lt;th&gt;5&lt;/th&gt;
       &lt;td&gt;Sacramento, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -489,7 +476,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;7&lt;/th&gt;
+      &lt;th&gt;6&lt;/th&gt;
       &lt;td&gt;Calgary, Canada&lt;/td&gt;
       &lt;td&gt;3&lt;/td&gt;
       &lt;td&gt;4&lt;/td&gt;
@@ -501,7 +488,7 @@ document.write(`
       &lt;td&gt;2&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;8&lt;/th&gt;
+      &lt;th&gt;7&lt;/th&gt;
       &lt;td&gt;Nepean, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -513,7 +500,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;9&lt;/th&gt;
+      &lt;th&gt;8&lt;/th&gt;
       &lt;td&gt;Woodstock, Canada&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
@@ -525,7 +512,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;10&lt;/th&gt;
+      &lt;th&gt;9&lt;/th&gt;
       &lt;td&gt;Halifax, Canada&lt;/td&gt;
       &lt;td&gt;5&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -537,7 +524,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;11&lt;/th&gt;
+      &lt;th&gt;10&lt;/th&gt;
       &lt;td&gt;Victoria, Canada&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
@@ -549,7 +536,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;12&lt;/th&gt;
+      &lt;th&gt;11&lt;/th&gt;
       &lt;td&gt;Windsor, Canada&lt;/td&gt;
       &lt;td&gt;4&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -561,7 +548,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;13&lt;/th&gt;
+      &lt;th&gt;12&lt;/th&gt;
       &lt;td&gt;Fredericton, Canada&lt;/td&gt;
       &lt;td&gt;7&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
@@ -573,7 +560,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;14&lt;/th&gt;
+      &lt;th&gt;13&lt;/th&gt;
       &lt;td&gt;Québec, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -585,7 +572,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;15&lt;/th&gt;
+      &lt;th&gt;14&lt;/th&gt;
       &lt;td&gt;Toronto, Canada&lt;/td&gt;
       &lt;td&gt;17&lt;/td&gt;
       &lt;td&gt;6&lt;/td&gt;
@@ -597,7 +584,7 @@ document.write(`
       &lt;td&gt;3&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;16&lt;/th&gt;
+      &lt;th&gt;15&lt;/th&gt;
       &lt;td&gt;Charlottetown, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -609,7 +596,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;17&lt;/th&gt;
+      &lt;th&gt;16&lt;/th&gt;
       &lt;td&gt;Liverpool, United Kingdom&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -621,7 +608,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;18&lt;/th&gt;
+      &lt;th&gt;17&lt;/th&gt;
       &lt;td&gt;Thunder Bay, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -633,7 +620,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;19&lt;/th&gt;
+      &lt;th&gt;18&lt;/th&gt;
       &lt;td&gt;Burlington, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -645,7 +632,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;20&lt;/th&gt;
+      &lt;th&gt;19&lt;/th&gt;
       &lt;td&gt;Cornwall, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -657,7 +644,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;21&lt;/th&gt;
+      &lt;th&gt;20&lt;/th&gt;
       &lt;td&gt;Montreal, Canada&lt;/td&gt;
       &lt;td&gt;6&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
@@ -669,7 +656,7 @@ document.write(`
       &lt;td&gt;2&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;22&lt;/th&gt;
+      &lt;th&gt;21&lt;/th&gt;
       &lt;td&gt;Kingston, Canada&lt;/td&gt;
       &lt;td&gt;4&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
@@ -681,7 +668,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;23&lt;/th&gt;
+      &lt;th&gt;22&lt;/th&gt;
       &lt;td&gt;Niagara Falls, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -693,7 +680,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;24&lt;/th&gt;
+      &lt;th&gt;23&lt;/th&gt;
       &lt;td&gt;Lima, Peru&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -705,7 +692,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;25&lt;/th&gt;
+      &lt;th&gt;24&lt;/th&gt;
       &lt;td&gt;Newmarket, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -717,7 +704,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;26&lt;/th&gt;
+      &lt;th&gt;25&lt;/th&gt;
       &lt;td&gt;Oakville, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -729,7 +716,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;27&lt;/th&gt;
+      &lt;th&gt;26&lt;/th&gt;
       &lt;td&gt;Lachine, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -741,7 +728,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;28&lt;/th&gt;
+      &lt;th&gt;27&lt;/th&gt;
       &lt;td&gt;Moncton, Canada&lt;/td&gt;
       &lt;td&gt;3&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
@@ -753,7 +740,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;29&lt;/th&gt;
+      &lt;th&gt;28&lt;/th&gt;
       &lt;td&gt;Talkeetna, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -765,7 +752,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;30&lt;/th&gt;
+      &lt;th&gt;29&lt;/th&gt;
       &lt;td&gt;Giza, Egypt&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -777,7 +764,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;31&lt;/th&gt;
+      &lt;th&gt;30&lt;/th&gt;
       &lt;td&gt;Dartmouth, Canada&lt;/td&gt;
       &lt;td&gt;4&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -789,7 +776,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;32&lt;/th&gt;
+      &lt;th&gt;31&lt;/th&gt;
       &lt;td&gt;Freiburg im Breisgau, Germany&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -801,7 +788,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;33&lt;/th&gt;
+      &lt;th&gt;32&lt;/th&gt;
       &lt;td&gt;Eastbourne, United Kingdom&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -813,7 +800,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;34&lt;/th&gt;
+      &lt;th&gt;33&lt;/th&gt;
       &lt;td&gt;Seattle, United States&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -825,7 +812,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;35&lt;/th&gt;
+      &lt;th&gt;34&lt;/th&gt;
       &lt;td&gt;Mission, Canada&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -837,7 +824,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;36&lt;/th&gt;
+      &lt;th&gt;35&lt;/th&gt;
       &lt;td&gt;Langley, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -849,7 +836,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;37&lt;/th&gt;
+      &lt;th&gt;36&lt;/th&gt;
       &lt;td&gt;Seabright, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -861,7 +848,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;38&lt;/th&gt;
+      &lt;th&gt;37&lt;/th&gt;
       &lt;td&gt;Creston, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -873,7 +860,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;39&lt;/th&gt;
+      &lt;th&gt;38&lt;/th&gt;
       &lt;td&gt;Winnipeg, Canada&lt;/td&gt;
       &lt;td&gt;3&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
@@ -885,7 +872,7 @@ document.write(`
       &lt;td&gt;2&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;40&lt;/th&gt;
+      &lt;th&gt;39&lt;/th&gt;
       &lt;td&gt;Regina, Canada&lt;/td&gt;
       &lt;td&gt;4&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -897,7 +884,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;41&lt;/th&gt;
+      &lt;th&gt;40&lt;/th&gt;
       &lt;td&gt;Guelph, Canada&lt;/td&gt;
       &lt;td&gt;3&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
@@ -909,7 +896,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;42&lt;/th&gt;
+      &lt;th&gt;41&lt;/th&gt;
       &lt;td&gt;Edmonton, Canada&lt;/td&gt;
       &lt;td&gt;4&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
@@ -921,7 +908,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;43&lt;/th&gt;
+      &lt;th&gt;42&lt;/th&gt;
       &lt;td&gt;Pittsburgh, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -933,7 +920,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;44&lt;/th&gt;
+      &lt;th&gt;43&lt;/th&gt;
       &lt;td&gt;Venice, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -945,7 +932,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;45&lt;/th&gt;
+      &lt;th&gt;44&lt;/th&gt;
       &lt;td&gt;Brampton, Canada&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -957,7 +944,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;46&lt;/th&gt;
+      &lt;th&gt;45&lt;/th&gt;
       &lt;td&gt;Albany, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -969,7 +956,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;47&lt;/th&gt;
+      &lt;th&gt;46&lt;/th&gt;
       &lt;td&gt;Hamilton, Canada&lt;/td&gt;
       &lt;td&gt;3&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -981,7 +968,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;48&lt;/th&gt;
+      &lt;th&gt;47&lt;/th&gt;
       &lt;td&gt;Grand Falls-Windsor, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -993,7 +980,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;49&lt;/th&gt;
+      &lt;th&gt;48&lt;/th&gt;
       &lt;td&gt;Buffalo, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1005,7 +992,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;50&lt;/th&gt;
+      &lt;th&gt;49&lt;/th&gt;
       &lt;td&gt;St. Catharines, Canada&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1017,7 +1004,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;51&lt;/th&gt;
+      &lt;th&gt;50&lt;/th&gt;
       &lt;td&gt;Philadelphia, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1029,7 +1016,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;52&lt;/th&gt;
+      &lt;th&gt;51&lt;/th&gt;
       &lt;td&gt;Black Mountain, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1041,7 +1028,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;53&lt;/th&gt;
+      &lt;th&gt;52&lt;/th&gt;
       &lt;td&gt;Lethbridge, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1053,7 +1040,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;54&lt;/th&gt;
+      &lt;th&gt;53&lt;/th&gt;
       &lt;td&gt;La Prairie, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1065,7 +1052,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;55&lt;/th&gt;
+      &lt;th&gt;54&lt;/th&gt;
       &lt;td&gt;Dawson City, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
@@ -1077,7 +1064,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;56&lt;/th&gt;
+      &lt;th&gt;55&lt;/th&gt;
       &lt;td&gt;Saint-Felix-de-Valois, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1089,7 +1076,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;57&lt;/th&gt;
+      &lt;th&gt;56&lt;/th&gt;
       &lt;td&gt;Livorno, Italy&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1101,7 +1088,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;58&lt;/th&gt;
+      &lt;th&gt;57&lt;/th&gt;
       &lt;td&gt;Longueuil, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
@@ -1113,7 +1100,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;59&lt;/th&gt;
+      &lt;th&gt;58&lt;/th&gt;
       &lt;td&gt;Blanchard, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1125,7 +1112,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;60&lt;/th&gt;
+      &lt;th&gt;59&lt;/th&gt;
       &lt;td&gt;Hawkesbury, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1137,7 +1124,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;61&lt;/th&gt;
+      &lt;th&gt;60&lt;/th&gt;
       &lt;td&gt;Puslinch, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1149,7 +1136,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;62&lt;/th&gt;
+      &lt;th&gt;61&lt;/th&gt;
       &lt;td&gt;Hinchinbrooke, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1161,7 +1148,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;63&lt;/th&gt;
+      &lt;th&gt;62&lt;/th&gt;
       &lt;td&gt;Brockville, Canada&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1173,7 +1160,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;64&lt;/th&gt;
+      &lt;th&gt;63&lt;/th&gt;
       &lt;td&gt;Rome, Italy&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1185,7 +1172,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;65&lt;/th&gt;
+      &lt;th&gt;64&lt;/th&gt;
       &lt;td&gt;Bathurst, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1197,7 +1184,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;66&lt;/th&gt;
+      &lt;th&gt;65&lt;/th&gt;
       &lt;td&gt;Vanløse, Denmark&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
@@ -1209,7 +1196,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;67&lt;/th&gt;
+      &lt;th&gt;66&lt;/th&gt;
       &lt;td&gt;Glasgow, United Kingdom&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1221,7 +1208,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;68&lt;/th&gt;
+      &lt;th&gt;67&lt;/th&gt;
       &lt;td&gt;Surrey, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1233,7 +1220,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;69&lt;/th&gt;
+      &lt;th&gt;68&lt;/th&gt;
       &lt;td&gt;Winston-Salem, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1245,7 +1232,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;70&lt;/th&gt;
+      &lt;th&gt;69&lt;/th&gt;
       &lt;td&gt;Welland, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1257,7 +1244,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;71&lt;/th&gt;
+      &lt;th&gt;70&lt;/th&gt;
       &lt;td&gt;Coquitlam, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1269,7 +1256,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;72&lt;/th&gt;
+      &lt;th&gt;71&lt;/th&gt;
       &lt;td&gt;Cambridge, Canada&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1281,7 +1268,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;73&lt;/th&gt;
+      &lt;th&gt;72&lt;/th&gt;
       &lt;td&gt;Oakland, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1293,7 +1280,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;74&lt;/th&gt;
+      &lt;th&gt;73&lt;/th&gt;
       &lt;td&gt;Squamish, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1305,7 +1292,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;75&lt;/th&gt;
+      &lt;th&gt;74&lt;/th&gt;
       &lt;td&gt;Campbellford, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1317,7 +1304,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;76&lt;/th&gt;
+      &lt;th&gt;75&lt;/th&gt;
       &lt;td&gt;Eufaula, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1329,7 +1316,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;77&lt;/th&gt;
+      &lt;th&gt;76&lt;/th&gt;
       &lt;td&gt;Riverton, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1341,7 +1328,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;78&lt;/th&gt;
+      &lt;th&gt;77&lt;/th&gt;
       &lt;td&gt;Richibucto, Canada&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1353,7 +1340,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;79&lt;/th&gt;
+      &lt;th&gt;78&lt;/th&gt;
       &lt;td&gt;Orléans, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1365,7 +1352,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;80&lt;/th&gt;
+      &lt;th&gt;79&lt;/th&gt;
       &lt;td&gt;Peterborough, Canada&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1377,7 +1364,7 @@ document.write(`
       &lt;td&gt;2&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;81&lt;/th&gt;
+      &lt;th&gt;80&lt;/th&gt;
       &lt;td&gt;Sydney, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1389,7 +1376,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;82&lt;/th&gt;
+      &lt;th&gt;81&lt;/th&gt;
       &lt;td&gt;Sebring, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1401,7 +1388,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;83&lt;/th&gt;
+      &lt;th&gt;82&lt;/th&gt;
       &lt;td&gt;Whitby, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1413,7 +1400,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;84&lt;/th&gt;
+      &lt;th&gt;83&lt;/th&gt;
       &lt;td&gt;Courtenay, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1425,7 +1412,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;85&lt;/th&gt;
+      &lt;th&gt;84&lt;/th&gt;
       &lt;td&gt;Miami, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1437,7 +1424,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;86&lt;/th&gt;
+      &lt;th&gt;85&lt;/th&gt;
       &lt;td&gt;Pointe-Claire, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1449,7 +1436,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;87&lt;/th&gt;
+      &lt;th&gt;86&lt;/th&gt;
       &lt;td&gt;Truro, Canada&lt;/td&gt;
       &lt;td&gt;3&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1461,7 +1448,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;88&lt;/th&gt;
+      &lt;th&gt;87&lt;/th&gt;
       &lt;td&gt;London, United Kingdom&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1473,7 +1460,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;89&lt;/th&gt;
+      &lt;th&gt;88&lt;/th&gt;
       &lt;td&gt;Kansas City, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1485,7 +1472,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;90&lt;/th&gt;
+      &lt;th&gt;89&lt;/th&gt;
       &lt;td&gt;Delta, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1497,7 +1484,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;91&lt;/th&gt;
+      &lt;th&gt;90&lt;/th&gt;
       &lt;td&gt;Gloucester, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1509,7 +1496,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;92&lt;/th&gt;
+      &lt;th&gt;91&lt;/th&gt;
       &lt;td&gt;Salem, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1521,7 +1508,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;93&lt;/th&gt;
+      &lt;th&gt;92&lt;/th&gt;
       &lt;td&gt;Ellensburg, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1533,7 +1520,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;94&lt;/th&gt;
+      &lt;th&gt;93&lt;/th&gt;
       &lt;td&gt;Prince George, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
@@ -1545,7 +1532,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;95&lt;/th&gt;
+      &lt;th&gt;94&lt;/th&gt;
       &lt;td&gt;Crystal Beach, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1557,7 +1544,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;96&lt;/th&gt;
+      &lt;th&gt;95&lt;/th&gt;
       &lt;td&gt;Simcoe, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1569,7 +1556,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;97&lt;/th&gt;
+      &lt;th&gt;96&lt;/th&gt;
       &lt;td&gt;Denver, United States&lt;/td&gt;
       &lt;td&gt;3&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1581,7 +1568,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;98&lt;/th&gt;
+      &lt;th&gt;97&lt;/th&gt;
       &lt;td&gt;Ashford, United Kingdom&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1593,7 +1580,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;99&lt;/th&gt;
+      &lt;th&gt;98&lt;/th&gt;
       &lt;td&gt;Rock Springs, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1605,7 +1592,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;100&lt;/th&gt;
+      &lt;th&gt;99&lt;/th&gt;
       &lt;td&gt;North Bay, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1617,7 +1604,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;101&lt;/th&gt;
+      &lt;th&gt;100&lt;/th&gt;
       &lt;td&gt;Nanaimo, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1629,7 +1616,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;102&lt;/th&gt;
+      &lt;th&gt;101&lt;/th&gt;
       &lt;td&gt;Bradford, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1641,7 +1628,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;103&lt;/th&gt;
+      &lt;th&gt;102&lt;/th&gt;
       &lt;td&gt;Traverse City, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1653,7 +1640,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;104&lt;/th&gt;
+      &lt;th&gt;103&lt;/th&gt;
       &lt;td&gt;Grand Blanc, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1665,7 +1652,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;105&lt;/th&gt;
+      &lt;th&gt;104&lt;/th&gt;
       &lt;td&gt;Camrose, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1677,7 +1664,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;106&lt;/th&gt;
+      &lt;th&gt;105&lt;/th&gt;
       &lt;td&gt;Ajax, Canada&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1689,7 +1676,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;107&lt;/th&gt;
+      &lt;th&gt;106&lt;/th&gt;
       &lt;td&gt;Kitchener, Canada&lt;/td&gt;
       &lt;td&gt;4&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1701,7 +1688,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;108&lt;/th&gt;
+      &lt;th&gt;107&lt;/th&gt;
       &lt;td&gt;Sarnia, Canada&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1713,7 +1700,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;109&lt;/th&gt;
+      &lt;th&gt;108&lt;/th&gt;
       &lt;td&gt;Saskatoon, Canada&lt;/td&gt;
       &lt;td&gt;4&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1725,7 +1712,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;110&lt;/th&gt;
+      &lt;th&gt;109&lt;/th&gt;
       &lt;td&gt;St. John&#39;s, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
@@ -1737,7 +1724,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;111&lt;/th&gt;
+      &lt;th&gt;110&lt;/th&gt;
       &lt;td&gt;Oromocto, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1749,7 +1736,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;112&lt;/th&gt;
+      &lt;th&gt;111&lt;/th&gt;
       &lt;td&gt;Richmond, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1761,7 +1748,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;113&lt;/th&gt;
+      &lt;th&gt;112&lt;/th&gt;
       &lt;td&gt;Austin, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1773,7 +1760,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;114&lt;/th&gt;
+      &lt;th&gt;113&lt;/th&gt;
       &lt;td&gt;Eastern Passage, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1785,7 +1772,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;115&lt;/th&gt;
+      &lt;th&gt;114&lt;/th&gt;
       &lt;td&gt;Copenhagen, Denmark&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1797,7 +1784,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;116&lt;/th&gt;
+      &lt;th&gt;115&lt;/th&gt;
       &lt;td&gt;Clarks Summit, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1809,7 +1796,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;117&lt;/th&gt;
+      &lt;th&gt;116&lt;/th&gt;
       &lt;td&gt;Melbourne, Australia&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1821,7 +1808,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;118&lt;/th&gt;
+      &lt;th&gt;117&lt;/th&gt;
       &lt;td&gt;NaN&lt;/td&gt;
       &lt;td&gt;43&lt;/td&gt;
       &lt;td&gt;12&lt;/td&gt;
@@ -1833,7 +1820,7 @@ document.write(`
       &lt;td&gt;6&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;119&lt;/th&gt;
+      &lt;th&gt;118&lt;/th&gt;
       &lt;td&gt;Hamtramck, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1845,7 +1832,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;120&lt;/th&gt;
+      &lt;th&gt;119&lt;/th&gt;
       &lt;td&gt;Watsonville, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1857,7 +1844,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;121&lt;/th&gt;
+      &lt;th&gt;120&lt;/th&gt;
       &lt;td&gt;Napanee, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1869,7 +1856,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;122&lt;/th&gt;
+      &lt;th&gt;121&lt;/th&gt;
       &lt;td&gt;Portland, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1881,7 +1868,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;123&lt;/th&gt;
+      &lt;th&gt;122&lt;/th&gt;
       &lt;td&gt;Oxford, United Kingdom&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1893,7 +1880,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;124&lt;/th&gt;
+      &lt;th&gt;123&lt;/th&gt;
       &lt;td&gt;Canyon Country, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1905,7 +1892,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;125&lt;/th&gt;
+      &lt;th&gt;124&lt;/th&gt;
       &lt;td&gt;Grimsby, Canada&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1917,7 +1904,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;126&lt;/th&gt;
+      &lt;th&gt;125&lt;/th&gt;
       &lt;td&gt;Lincoln, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1929,7 +1916,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;127&lt;/th&gt;
+      &lt;th&gt;126&lt;/th&gt;
       &lt;td&gt;Corner Brook, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1941,7 +1928,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;128&lt;/th&gt;
+      &lt;th&gt;127&lt;/th&gt;
       &lt;td&gt;Niles, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1953,7 +1940,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;129&lt;/th&gt;
+      &lt;th&gt;128&lt;/th&gt;
       &lt;td&gt;Sackville, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;3&lt;/td&gt;
@@ -1965,7 +1952,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;130&lt;/th&gt;
+      &lt;th&gt;129&lt;/th&gt;
       &lt;td&gt;Acton, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1977,7 +1964,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;131&lt;/th&gt;
+      &lt;th&gt;130&lt;/th&gt;
       &lt;td&gt;Barrie, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -1989,7 +1976,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;132&lt;/th&gt;
+      &lt;th&gt;131&lt;/th&gt;
       &lt;td&gt;Duncan, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2001,7 +1988,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;133&lt;/th&gt;
+      &lt;th&gt;132&lt;/th&gt;
       &lt;td&gt;Norwich, United Kingdom&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2013,7 +2000,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;134&lt;/th&gt;
+      &lt;th&gt;133&lt;/th&gt;
       &lt;td&gt;Etobicoke, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2025,7 +2012,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;135&lt;/th&gt;
+      &lt;th&gt;134&lt;/th&gt;
       &lt;td&gt;Zwolle, The Netherlands&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2037,7 +2024,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;136&lt;/th&gt;
+      &lt;th&gt;135&lt;/th&gt;
       &lt;td&gt;New Minas, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2049,7 +2036,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;137&lt;/th&gt;
+      &lt;th&gt;136&lt;/th&gt;
       &lt;td&gt;Poplar, United Kingdom&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2061,7 +2048,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;138&lt;/th&gt;
+      &lt;th&gt;137&lt;/th&gt;
       &lt;td&gt;Beaverton, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2073,7 +2060,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;139&lt;/th&gt;
+      &lt;th&gt;138&lt;/th&gt;
       &lt;td&gt;Kent, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2085,7 +2072,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;140&lt;/th&gt;
+      &lt;th&gt;139&lt;/th&gt;
       &lt;td&gt;Drumheller, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2097,7 +2084,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;141&lt;/th&gt;
+      &lt;th&gt;140&lt;/th&gt;
       &lt;td&gt;Palm Springs, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2109,7 +2096,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;142&lt;/th&gt;
+      &lt;th&gt;141&lt;/th&gt;
       &lt;td&gt;Williams Lake, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2121,7 +2108,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;143&lt;/th&gt;
+      &lt;th&gt;142&lt;/th&gt;
       &lt;td&gt;Scarborough, Canada&lt;/td&gt;
       &lt;td&gt;3&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2133,7 +2120,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;144&lt;/th&gt;
+      &lt;th&gt;143&lt;/th&gt;
       &lt;td&gt;Red Deer, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2145,7 +2132,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;145&lt;/th&gt;
+      &lt;th&gt;144&lt;/th&gt;
       &lt;td&gt;Weehawken, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2157,7 +2144,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;146&lt;/th&gt;
+      &lt;th&gt;145&lt;/th&gt;
       &lt;td&gt;Port Saint Lucie, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2169,7 +2156,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;147&lt;/th&gt;
+      &lt;th&gt;146&lt;/th&gt;
       &lt;td&gt;Greater Sudbury, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2181,7 +2168,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;148&lt;/th&gt;
+      &lt;th&gt;147&lt;/th&gt;
       &lt;td&gt;Stayner, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2193,7 +2180,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;149&lt;/th&gt;
+      &lt;th&gt;148&lt;/th&gt;
       &lt;td&gt;Temiscaming, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2205,7 +2192,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;150&lt;/th&gt;
+      &lt;th&gt;149&lt;/th&gt;
       &lt;td&gt;Leeds, United Kingdom&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2217,7 +2204,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;151&lt;/th&gt;
+      &lt;th&gt;150&lt;/th&gt;
       &lt;td&gt;St. Albert, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2229,7 +2216,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;152&lt;/th&gt;
+      &lt;th&gt;151&lt;/th&gt;
       &lt;td&gt;Campbell River, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2241,7 +2228,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;153&lt;/th&gt;
+      &lt;th&gt;152&lt;/th&gt;
       &lt;td&gt;Quispamsis, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2253,7 +2240,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;154&lt;/th&gt;
+      &lt;th&gt;153&lt;/th&gt;
       &lt;td&gt;Howell, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2265,7 +2252,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;155&lt;/th&gt;
+      &lt;th&gt;154&lt;/th&gt;
       &lt;td&gt;Digby, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2277,7 +2264,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;156&lt;/th&gt;
+      &lt;th&gt;155&lt;/th&gt;
       &lt;td&gt;Attleboro, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2289,7 +2276,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;157&lt;/th&gt;
+      &lt;th&gt;156&lt;/th&gt;
       &lt;td&gt;Loretto, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
@@ -2301,7 +2288,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;158&lt;/th&gt;
+      &lt;th&gt;157&lt;/th&gt;
       &lt;td&gt;Dundas, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2313,7 +2300,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;159&lt;/th&gt;
+      &lt;th&gt;158&lt;/th&gt;
       &lt;td&gt;Ossining, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2325,7 +2312,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;160&lt;/th&gt;
+      &lt;th&gt;159&lt;/th&gt;
       &lt;td&gt;Merritt, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2337,7 +2324,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;161&lt;/th&gt;
+      &lt;th&gt;160&lt;/th&gt;
       &lt;td&gt;Cassopolis, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2349,7 +2336,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;162&lt;/th&gt;
+      &lt;th&gt;161&lt;/th&gt;
       &lt;td&gt;Fall River, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2361,7 +2348,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;163&lt;/th&gt;
+      &lt;th&gt;162&lt;/th&gt;
       &lt;td&gt;Stoney Creek, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2373,7 +2360,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;164&lt;/th&gt;
+      &lt;th&gt;163&lt;/th&gt;
       &lt;td&gt;Chatham, Canada&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2385,7 +2372,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;165&lt;/th&gt;
+      &lt;th&gt;164&lt;/th&gt;
       &lt;td&gt;Oshawa, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2397,7 +2384,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;166&lt;/th&gt;
+      &lt;th&gt;165&lt;/th&gt;
       &lt;td&gt;Sturgeon Falls, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2409,7 +2396,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;167&lt;/th&gt;
+      &lt;th&gt;166&lt;/th&gt;
       &lt;td&gt;Brandon, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2421,7 +2408,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;168&lt;/th&gt;
+      &lt;th&gt;167&lt;/th&gt;
       &lt;td&gt;Collingwood, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2433,7 +2420,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;169&lt;/th&gt;
+      &lt;th&gt;168&lt;/th&gt;
       &lt;td&gt;Woodbridge, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2445,7 +2432,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;170&lt;/th&gt;
+      &lt;th&gt;169&lt;/th&gt;
       &lt;td&gt;Airdrie, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2457,7 +2444,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;171&lt;/th&gt;
+      &lt;th&gt;170&lt;/th&gt;
       &lt;td&gt;Fenelon Falls, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2469,7 +2456,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;172&lt;/th&gt;
+      &lt;th&gt;171&lt;/th&gt;
       &lt;td&gt;Pensacola, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2481,7 +2468,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;173&lt;/th&gt;
+      &lt;th&gt;172&lt;/th&gt;
       &lt;td&gt;Penticton, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2493,7 +2480,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;174&lt;/th&gt;
+      &lt;th&gt;173&lt;/th&gt;
       &lt;td&gt;Summerland, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2505,7 +2492,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;175&lt;/th&gt;
+      &lt;th&gt;174&lt;/th&gt;
       &lt;td&gt;West Paris, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2517,7 +2504,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;176&lt;/th&gt;
+      &lt;th&gt;175&lt;/th&gt;
       &lt;td&gt;Walkerton, Canada&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2529,7 +2516,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;177&lt;/th&gt;
+      &lt;th&gt;176&lt;/th&gt;
       &lt;td&gt;Kamloops, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2541,7 +2528,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;178&lt;/th&gt;
+      &lt;th&gt;177&lt;/th&gt;
       &lt;td&gt;Mitchell/Ontario, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
@@ -2553,7 +2540,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;179&lt;/th&gt;
+      &lt;th&gt;178&lt;/th&gt;
       &lt;td&gt;Hoffman, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2565,7 +2552,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;180&lt;/th&gt;
+      &lt;th&gt;179&lt;/th&gt;
       &lt;td&gt;Saint John, Canada&lt;/td&gt;
       &lt;td&gt;3&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2577,7 +2564,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;181&lt;/th&gt;
+      &lt;th&gt;180&lt;/th&gt;
       &lt;td&gt;Milverton, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2589,7 +2576,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;182&lt;/th&gt;
+      &lt;th&gt;181&lt;/th&gt;
       &lt;td&gt;Paddle Prairie, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2601,7 +2588,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;183&lt;/th&gt;
+      &lt;th&gt;182&lt;/th&gt;
       &lt;td&gt;St. Stephen, Canada&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2613,7 +2600,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;184&lt;/th&gt;
+      &lt;th&gt;183&lt;/th&gt;
       &lt;td&gt;Gatineau, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2625,7 +2612,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;185&lt;/th&gt;
+      &lt;th&gt;184&lt;/th&gt;
       &lt;td&gt;Waterloo, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2637,7 +2624,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;186&lt;/th&gt;
+      &lt;th&gt;185&lt;/th&gt;
       &lt;td&gt;Verdun, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2649,7 +2636,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;187&lt;/th&gt;
+      &lt;th&gt;186&lt;/th&gt;
       &lt;td&gt;Ellicott City, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2661,7 +2648,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;188&lt;/th&gt;
+      &lt;th&gt;187&lt;/th&gt;
       &lt;td&gt;Mississauga, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2673,7 +2660,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;189&lt;/th&gt;
+      &lt;th&gt;188&lt;/th&gt;
       &lt;td&gt;Seixal, Portugal&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2685,7 +2672,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;190&lt;/th&gt;
+      &lt;th&gt;189&lt;/th&gt;
       &lt;td&gt;Picton, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2697,7 +2684,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;191&lt;/th&gt;
+      &lt;th&gt;190&lt;/th&gt;
       &lt;td&gt;Middle Sackville, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2709,7 +2696,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;192&lt;/th&gt;
+      &lt;th&gt;191&lt;/th&gt;
       &lt;td&gt;North Vancouver, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2721,7 +2708,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;193&lt;/th&gt;
+      &lt;th&gt;192&lt;/th&gt;
       &lt;td&gt;Warkworth, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2733,7 +2720,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;194&lt;/th&gt;
+      &lt;th&gt;193&lt;/th&gt;
       &lt;td&gt;Beaconsfield, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2745,7 +2732,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;195&lt;/th&gt;
+      &lt;th&gt;194&lt;/th&gt;
       &lt;td&gt;Listowel, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2757,7 +2744,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;196&lt;/th&gt;
+      &lt;th&gt;195&lt;/th&gt;
       &lt;td&gt;Bobcaygeon, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2769,7 +2756,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;197&lt;/th&gt;
+      &lt;th&gt;196&lt;/th&gt;
       &lt;td&gt;Caledon, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2781,7 +2768,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;198&lt;/th&gt;
+      &lt;th&gt;197&lt;/th&gt;
       &lt;td&gt;Mutxamel, Spain&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2793,7 +2780,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;199&lt;/th&gt;
+      &lt;th&gt;198&lt;/th&gt;
       &lt;td&gt;Cochrane, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2805,7 +2792,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;200&lt;/th&gt;
+      &lt;th&gt;199&lt;/th&gt;
       &lt;td&gt;Augusta, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2817,7 +2804,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;201&lt;/th&gt;
+      &lt;th&gt;200&lt;/th&gt;
       &lt;td&gt;Perth, United Kingdom&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2829,7 +2816,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;202&lt;/th&gt;
+      &lt;th&gt;201&lt;/th&gt;
       &lt;td&gt;Amsterdam, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2841,7 +2828,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;203&lt;/th&gt;
+      &lt;th&gt;202&lt;/th&gt;
       &lt;td&gt;Brant, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2853,7 +2840,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;204&lt;/th&gt;
+      &lt;th&gt;203&lt;/th&gt;
       &lt;td&gt;Pickering, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2865,7 +2852,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;205&lt;/th&gt;
+      &lt;th&gt;204&lt;/th&gt;
       &lt;td&gt;Cortland, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2877,7 +2864,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;206&lt;/th&gt;
+      &lt;th&gt;205&lt;/th&gt;
       &lt;td&gt;Stratford, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2889,7 +2876,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;207&lt;/th&gt;
+      &lt;th&gt;206&lt;/th&gt;
       &lt;td&gt;Amherst, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2901,7 +2888,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;208&lt;/th&gt;
+      &lt;th&gt;207&lt;/th&gt;
       &lt;td&gt;Bradenton, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2913,7 +2900,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;209&lt;/th&gt;
+      &lt;th&gt;208&lt;/th&gt;
       &lt;td&gt;Columbus, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2925,7 +2912,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;210&lt;/th&gt;
+      &lt;th&gt;209&lt;/th&gt;
       &lt;td&gt;Bedford, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
@@ -2937,7 +2924,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;211&lt;/th&gt;
+      &lt;th&gt;210&lt;/th&gt;
       &lt;td&gt;Washington, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2949,7 +2936,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;212&lt;/th&gt;
+      &lt;th&gt;211&lt;/th&gt;
       &lt;td&gt;Abbotsford, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2961,7 +2948,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;213&lt;/th&gt;
+      &lt;th&gt;212&lt;/th&gt;
       &lt;td&gt;Bethlehem, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2973,7 +2960,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;214&lt;/th&gt;
+      &lt;th&gt;213&lt;/th&gt;
       &lt;td&gt;Lincoln Park, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2985,7 +2972,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;215&lt;/th&gt;
+      &lt;th&gt;214&lt;/th&gt;
       &lt;td&gt;Puerto Vallarta, Mexico&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -2997,7 +2984,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;216&lt;/th&gt;
+      &lt;th&gt;215&lt;/th&gt;
       &lt;td&gt;Pierceland, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3009,7 +2996,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;217&lt;/th&gt;
+      &lt;th&gt;216&lt;/th&gt;
       &lt;td&gt;Brighton, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3021,7 +3008,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;218&lt;/th&gt;
+      &lt;th&gt;217&lt;/th&gt;
       &lt;td&gt;Clinton, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3033,7 +3020,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;219&lt;/th&gt;
+      &lt;th&gt;218&lt;/th&gt;
       &lt;td&gt;Laval, Canada&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3045,7 +3032,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;220&lt;/th&gt;
+      &lt;th&gt;219&lt;/th&gt;
       &lt;td&gt;Big Beach, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3057,7 +3044,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;221&lt;/th&gt;
+      &lt;th&gt;220&lt;/th&gt;
       &lt;td&gt;Saint-Lambert, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3069,7 +3056,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;222&lt;/th&gt;
+      &lt;th&gt;221&lt;/th&gt;
       &lt;td&gt;Sevierville, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3081,7 +3068,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;223&lt;/th&gt;
+      &lt;th&gt;222&lt;/th&gt;
       &lt;td&gt;Vernon River, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3093,7 +3080,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;224&lt;/th&gt;
+      &lt;th&gt;223&lt;/th&gt;
       &lt;td&gt;Cambridge, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3105,7 +3092,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;225&lt;/th&gt;
+      &lt;th&gt;224&lt;/th&gt;
       &lt;td&gt;Bracebridge, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3117,7 +3104,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;226&lt;/th&gt;
+      &lt;th&gt;225&lt;/th&gt;
       &lt;td&gt;Sherbrooke, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3129,7 +3116,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;227&lt;/th&gt;
+      &lt;th&gt;226&lt;/th&gt;
       &lt;td&gt;Lower Sackville, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3141,7 +3128,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;228&lt;/th&gt;
+      &lt;th&gt;227&lt;/th&gt;
       &lt;td&gt;Providence, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3153,7 +3140,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;229&lt;/th&gt;
+      &lt;th&gt;228&lt;/th&gt;
       &lt;td&gt;Millbrook, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3165,7 +3152,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;230&lt;/th&gt;
+      &lt;th&gt;229&lt;/th&gt;
       &lt;td&gt;Carleton Place, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3177,7 +3164,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;231&lt;/th&gt;
+      &lt;th&gt;230&lt;/th&gt;
       &lt;td&gt;Novalja, Croatia&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3189,7 +3176,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;232&lt;/th&gt;
+      &lt;th&gt;231&lt;/th&gt;
       &lt;td&gt;Mirabel, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3201,7 +3188,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;233&lt;/th&gt;
+      &lt;th&gt;232&lt;/th&gt;
       &lt;td&gt;Hammonds Plains, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3213,7 +3200,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;234&lt;/th&gt;
+      &lt;th&gt;233&lt;/th&gt;
       &lt;td&gt;New York, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3225,7 +3212,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;235&lt;/th&gt;
+      &lt;th&gt;234&lt;/th&gt;
       &lt;td&gt;Massey, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3237,7 +3224,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;236&lt;/th&gt;
+      &lt;th&gt;235&lt;/th&gt;
       &lt;td&gt;Stouffville, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3249,7 +3236,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;237&lt;/th&gt;
+      &lt;th&gt;236&lt;/th&gt;
       &lt;td&gt;Ashburn, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3261,7 +3248,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;238&lt;/th&gt;
+      &lt;th&gt;237&lt;/th&gt;
       &lt;td&gt;Rock Hill, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3273,7 +3260,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;239&lt;/th&gt;
+      &lt;th&gt;238&lt;/th&gt;
       &lt;td&gt;Summerside, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3285,7 +3272,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;240&lt;/th&gt;
+      &lt;th&gt;239&lt;/th&gt;
       &lt;td&gt;Stockholm, Sweden&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3297,7 +3284,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;241&lt;/th&gt;
+      &lt;th&gt;240&lt;/th&gt;
       &lt;td&gt;Rishon LeTsiyyon, Israel&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3309,7 +3296,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;242&lt;/th&gt;
+      &lt;th&gt;241&lt;/th&gt;
       &lt;td&gt;Marblehead, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3321,7 +3308,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;243&lt;/th&gt;
+      &lt;th&gt;242&lt;/th&gt;
       &lt;td&gt;Sidney, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3333,7 +3320,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;244&lt;/th&gt;
+      &lt;th&gt;243&lt;/th&gt;
       &lt;td&gt;Boulder, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3345,7 +3332,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;245&lt;/th&gt;
+      &lt;th&gt;244&lt;/th&gt;
       &lt;td&gt;Antigonish, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3357,7 +3344,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;246&lt;/th&gt;
+      &lt;th&gt;245&lt;/th&gt;
       &lt;td&gt;Elliot Lake, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3369,7 +3356,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;247&lt;/th&gt;
+      &lt;th&gt;246&lt;/th&gt;
       &lt;td&gt;Smithers, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3381,7 +3368,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;248&lt;/th&gt;
+      &lt;th&gt;247&lt;/th&gt;
       &lt;td&gt;Wainfleet, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3393,7 +3380,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;249&lt;/th&gt;
+      &lt;th&gt;248&lt;/th&gt;
       &lt;td&gt;Paradise, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3405,7 +3392,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;250&lt;/th&gt;
+      &lt;th&gt;249&lt;/th&gt;
       &lt;td&gt;Qualicum Beach, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3417,7 +3404,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;251&lt;/th&gt;
+      &lt;th&gt;250&lt;/th&gt;
       &lt;td&gt;Ljubljana, Slovenia&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3429,7 +3416,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;252&lt;/th&gt;
+      &lt;th&gt;251&lt;/th&gt;
       &lt;td&gt;Brooklyn, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3441,7 +3428,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;253&lt;/th&gt;
+      &lt;th&gt;252&lt;/th&gt;
       &lt;td&gt;North York, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3453,7 +3440,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;254&lt;/th&gt;
+      &lt;th&gt;253&lt;/th&gt;
       &lt;td&gt;Lansdale, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
@@ -3465,7 +3452,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;255&lt;/th&gt;
+      &lt;th&gt;254&lt;/th&gt;
       &lt;td&gt;Keene, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3477,7 +3464,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;256&lt;/th&gt;
+      &lt;th&gt;255&lt;/th&gt;
       &lt;td&gt;Coimbatore, India&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3489,7 +3476,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;257&lt;/th&gt;
+      &lt;th&gt;256&lt;/th&gt;
       &lt;td&gt;St Helens, United Kingdom&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3501,7 +3488,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;258&lt;/th&gt;
+      &lt;th&gt;257&lt;/th&gt;
       &lt;td&gt;Castro Valley, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3513,7 +3500,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;259&lt;/th&gt;
+      &lt;th&gt;258&lt;/th&gt;
       &lt;td&gt;Omaha, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3525,7 +3512,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;260&lt;/th&gt;
+      &lt;th&gt;259&lt;/th&gt;
       &lt;td&gt;Prince Albert, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3537,7 +3524,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;261&lt;/th&gt;
+      &lt;th&gt;260&lt;/th&gt;
       &lt;td&gt;Lakewood, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3549,7 +3536,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;262&lt;/th&gt;
+      &lt;th&gt;261&lt;/th&gt;
       &lt;td&gt;Harvey Station, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3561,7 +3548,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;263&lt;/th&gt;
+      &lt;th&gt;262&lt;/th&gt;
       &lt;td&gt;Compton, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
@@ -3573,7 +3560,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;264&lt;/th&gt;
+      &lt;th&gt;263&lt;/th&gt;
       &lt;td&gt;Cawston, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3585,7 +3572,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;265&lt;/th&gt;
+      &lt;th&gt;264&lt;/th&gt;
       &lt;td&gt;Torbay, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3597,7 +3584,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;266&lt;/th&gt;
+      &lt;th&gt;265&lt;/th&gt;
       &lt;td&gt;Stevensville, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3609,7 +3596,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;267&lt;/th&gt;
+      &lt;th&gt;266&lt;/th&gt;
       &lt;td&gt;Thorold, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3621,7 +3608,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;268&lt;/th&gt;
+      &lt;th&gt;267&lt;/th&gt;
       &lt;td&gt;Charlottesville, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3633,7 +3620,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;269&lt;/th&gt;
+      &lt;th&gt;268&lt;/th&gt;
       &lt;td&gt;Edinburgh, United Kingdom&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3645,7 +3632,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;270&lt;/th&gt;
+      &lt;th&gt;269&lt;/th&gt;
       &lt;td&gt;Brossard, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
@@ -3657,7 +3644,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;271&lt;/th&gt;
+      &lt;th&gt;270&lt;/th&gt;
       &lt;td&gt;Hillsborough, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3669,7 +3656,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;272&lt;/th&gt;
+      &lt;th&gt;271&lt;/th&gt;
       &lt;td&gt;Braunschweig, Germany&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3681,7 +3668,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;273&lt;/th&gt;
+      &lt;th&gt;272&lt;/th&gt;
       &lt;td&gt;Spokane, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3693,7 +3680,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;274&lt;/th&gt;
+      &lt;th&gt;273&lt;/th&gt;
       &lt;td&gt;Colorado Springs, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3705,7 +3692,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;275&lt;/th&gt;
+      &lt;th&gt;274&lt;/th&gt;
       &lt;td&gt;Richmond Hill, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3717,7 +3704,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;276&lt;/th&gt;
+      &lt;th&gt;275&lt;/th&gt;
       &lt;td&gt;Strathroy, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3729,7 +3716,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;277&lt;/th&gt;
+      &lt;th&gt;276&lt;/th&gt;
       &lt;td&gt;Saint-Jean-sur-Richelieu, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3741,7 +3728,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;278&lt;/th&gt;
+      &lt;th&gt;277&lt;/th&gt;
       &lt;td&gt;Vankleek Hill, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3753,7 +3740,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;279&lt;/th&gt;
+      &lt;th&gt;278&lt;/th&gt;
       &lt;td&gt;Nashville, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3765,7 +3752,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;280&lt;/th&gt;
+      &lt;th&gt;279&lt;/th&gt;
       &lt;td&gt;Banff, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3777,7 +3764,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;281&lt;/th&gt;
+      &lt;th&gt;280&lt;/th&gt;
       &lt;td&gt;Lynnfield, United States&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3789,7 +3776,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;282&lt;/th&gt;
+      &lt;th&gt;281&lt;/th&gt;
       &lt;td&gt;Niagara-on-the-Lake, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3801,7 +3788,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;283&lt;/th&gt;
+      &lt;th&gt;282&lt;/th&gt;
       &lt;td&gt;St. Thomas, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3813,7 +3800,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;284&lt;/th&gt;
+      &lt;th&gt;283&lt;/th&gt;
       &lt;td&gt;Mortsel, Belgium&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3825,7 +3812,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;285&lt;/th&gt;
+      &lt;th&gt;284&lt;/th&gt;
       &lt;td&gt;St. Marys, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3837,7 +3824,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;286&lt;/th&gt;
+      &lt;th&gt;285&lt;/th&gt;
       &lt;td&gt;Cheticamp, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3849,7 +3836,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;287&lt;/th&gt;
+      &lt;th&gt;286&lt;/th&gt;
       &lt;td&gt;Avon, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3861,7 +3848,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;288&lt;/th&gt;
+      &lt;th&gt;287&lt;/th&gt;
       &lt;td&gt;Nice, France&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3873,7 +3860,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;289&lt;/th&gt;
+      &lt;th&gt;288&lt;/th&gt;
       &lt;td&gt;Maple, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3885,7 +3872,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;290&lt;/th&gt;
+      &lt;th&gt;289&lt;/th&gt;
       &lt;td&gt;Valleyview, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3897,7 +3884,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;291&lt;/th&gt;
+      &lt;th&gt;290&lt;/th&gt;
       &lt;td&gt;Kentville, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3909,7 +3896,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;292&lt;/th&gt;
+      &lt;th&gt;291&lt;/th&gt;
       &lt;td&gt;Indianapolis, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3921,7 +3908,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;293&lt;/th&gt;
+      &lt;th&gt;292&lt;/th&gt;
       &lt;td&gt;Dallas, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3933,7 +3920,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;294&lt;/th&gt;
+      &lt;th&gt;293&lt;/th&gt;
       &lt;td&gt;Vernon, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3945,7 +3932,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;295&lt;/th&gt;
+      &lt;th&gt;294&lt;/th&gt;
       &lt;td&gt;Grande Cache, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3957,7 +3944,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;296&lt;/th&gt;
+      &lt;th&gt;295&lt;/th&gt;
       &lt;td&gt;Wasaga Beach, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3969,7 +3956,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;297&lt;/th&gt;
+      &lt;th&gt;296&lt;/th&gt;
       &lt;td&gt;Barraute, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3981,7 +3968,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;298&lt;/th&gt;
+      &lt;th&gt;297&lt;/th&gt;
       &lt;td&gt;Dorval, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -3993,7 +3980,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;299&lt;/th&gt;
+      &lt;th&gt;298&lt;/th&gt;
       &lt;td&gt;Stittsville, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4005,7 +3992,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;300&lt;/th&gt;
+      &lt;th&gt;299&lt;/th&gt;
       &lt;td&gt;Orillia, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4017,7 +4004,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;301&lt;/th&gt;
+      &lt;th&gt;300&lt;/th&gt;
       &lt;td&gt;Los Angeles, United States&lt;/td&gt;
       &lt;td&gt;2&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4029,7 +4016,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;302&lt;/th&gt;
+      &lt;th&gt;301&lt;/th&gt;
       &lt;td&gt;Freedom, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4041,7 +4028,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;303&lt;/th&gt;
+      &lt;th&gt;302&lt;/th&gt;
       &lt;td&gt;Conception Bay South, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4053,7 +4040,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;304&lt;/th&gt;
+      &lt;th&gt;303&lt;/th&gt;
       &lt;td&gt;Dieppe, Canada&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4065,7 +4052,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;305&lt;/th&gt;
+      &lt;th&gt;304&lt;/th&gt;
       &lt;td&gt;Mestre, Italy&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4077,7 +4064,7 @@ document.write(`
       &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;306&lt;/th&gt;
+      &lt;th&gt;305&lt;/th&gt;
       &lt;td&gt;Chelsea, United Kingdom&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4089,7 +4076,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;307&lt;/th&gt;
+      &lt;th&gt;306&lt;/th&gt;
       &lt;td&gt;Puigcerdà, Spain&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4101,7 +4088,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;308&lt;/th&gt;
+      &lt;th&gt;307&lt;/th&gt;
       &lt;td&gt;Berlin, Germany&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4113,7 +4100,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;309&lt;/th&gt;
+      &lt;th&gt;308&lt;/th&gt;
       &lt;td&gt;Brisbane, Australia&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4125,7 +4112,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;310&lt;/th&gt;
+      &lt;th&gt;309&lt;/th&gt;
       &lt;td&gt;Burnaby, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4137,7 +4124,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;311&lt;/th&gt;
+      &lt;th&gt;310&lt;/th&gt;
       &lt;td&gt;Chicago, United States&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4149,7 +4136,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;312&lt;/th&gt;
+      &lt;th&gt;311&lt;/th&gt;
       &lt;td&gt;Kelowna, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4161,7 +4148,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;313&lt;/th&gt;
+      &lt;th&gt;312&lt;/th&gt;
       &lt;td&gt;Redlands, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4173,7 +4160,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;314&lt;/th&gt;
+      &lt;th&gt;313&lt;/th&gt;
       &lt;td&gt;Athol, United States&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4185,7 +4172,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;315&lt;/th&gt;
+      &lt;th&gt;314&lt;/th&gt;
       &lt;td&gt;Sydney, Australia&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4197,7 +4184,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;316&lt;/th&gt;
+      &lt;th&gt;315&lt;/th&gt;
       &lt;td&gt;Bath, United Kingdom&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4209,7 +4196,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;317&lt;/th&gt;
+      &lt;th&gt;316&lt;/th&gt;
       &lt;td&gt;Parksville, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4221,7 +4208,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;318&lt;/th&gt;
+      &lt;th&gt;317&lt;/th&gt;
       &lt;td&gt;Moser River, Canada&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
@@ -4233,7 +4220,7 @@ document.write(`
       &lt;td&gt;0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;319&lt;/th&gt;
+      &lt;th&gt;318&lt;/th&gt;
       &lt;td&gt;Milan, Italy&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;0&lt;/td&gt;
