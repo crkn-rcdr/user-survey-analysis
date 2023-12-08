@@ -647,11 +647,11 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cluster 0: writer retired research
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cluster 0: editor research artist
 Cluster 1: researcher historical independent
-Cluster 2: historian amateur local
-Cluster 3: page london facebook
-Cluster 4: editor and historian
+Cluster 2: historian amateur railway
+Cluster 3: professor retired history
+Cluster 4: writer fiction and
 </pre></div>
 </div>
 </div>
@@ -912,10 +912,10 @@ Cluster 4: editor and historian
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{0: [&#39;studies&#39;, &#39;architecture&#39;, &#39;sciences&#39;],
- 1: [&#39;history&#39;, &#39;local&#39;, &#39;railway&#39;],
- 2: [&#39;archaeology&#39;, &#39;anthropology&#39;, &#39;youth&#39;],
- 3: [&#39;theology&#39;, &#39;biblical&#39;, &#39;psychotherapy&#39;],
- 4: [&#39;anthropology&#39;, &#39;youth&#39;, &#39;garden&#39;]}
+ 1: [&#39;theology&#39;, &#39;biblical&#39;, &#39;psychotherapy&#39;],
+ 2: [&#39;anthropology&#39;, &#39;archaeology&#39;, &#39;youth&#39;],
+ 3: [&#39;history&#39;, &#39;local&#39;, &#39;railway&#39;],
+ 4: [&#39;art&#39;, &#39;craft&#39;, &#39;visual&#39;]}
 </pre></div>
 </div>
 </div>
@@ -1063,9 +1063,9 @@ Cluster 4: editor and historian
       <td>0</td>
       <td>0</td>
       <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>1</td>
-      <td>0</td>
-      <td>0</td>
       <td>0</td>
     </tr>
     <tr>
@@ -1152,6 +1152,356 @@ Cluster 4: editor and historian
 </div>
 </div>
 <p>The dataframe has been successfully converted to a CSV file. The file is named ‘processed_data.csv’.</p>
+<blockquote>
+<div><p>Identify interest and occupation columns</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">interest_columns</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">&#39;Computer Science&#39;</span><span class="p">,</span><span class="s1">&#39;Digital Humanities&#39;</span><span class="p">,</span><span class="s1">&#39;Education&#39;</span><span class="p">,</span><span class="s1">&#39;Environment/Climate&#39;</span><span class="p">,</span><span class="s1">&#39;Gender Studies&#39;</span><span class="p">,</span><span class="s1">&#39;Genealogy&#39;</span><span class="p">,</span><span class="s1">&#39;Geography&#39;</span><span class="p">,</span><span class="s1">&#39;Health&#39;</span><span class="p">,</span><span class="s1">&#39;History&#39;</span><span class="p">,</span><span class="s1">&#39;Indigenous Land Claims&#39;</span><span class="p">,</span><span class="s1">&#39;Indigenous Studies&#39;</span><span class="p">,</span><span class="s1">&#39;Information Science&#39;</span><span class="p">,</span><span class="s1">&#39;Law&#39;</span><span class="p">,</span><span class="s1">&#39;Linguistics&#39;</span><span class="p">,</span><span class="s1">&#39;Literature&#39;</span><span class="p">,</span><span class="s1">&#39;Political Science&#39;</span><span class="p">,</span><span class="s1">&#39;Anthropology, Studies, Archaeology&#39;</span><span class="p">,</span><span class="s1">&#39;History, Local, Railway&#39;</span><span class="p">,</span><span class="s1">&#39;Theology, Biblical, Psychotherapy&#39;</span><span class="p">,</span><span class="s1">&#39;Architecture, Youth, Garden&#39;</span><span class="p">,</span><span class="s1">&#39;Religion, Youth, Equality&#39;</span><span class="p">]</span>
+
+<span class="n">occupation_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Genealogical researcher&#39;</span><span class="p">,</span><span class="s1">&#39;GLAM professional&#39;</span><span class="p">,</span><span class="s1">&#39;Government employee&#39;</span><span class="p">,</span><span class="s1">&#39;Legal researcher&#39;</span><span class="p">,</span><span class="s1">&#39;Member of the general public&#39;</span><span class="p">,</span><span class="s1">&#39;Post-secondary researcher&#39;</span><span class="p">,</span><span class="s1">&#39;Student&#39;</span><span class="p">,</span><span class="s1">&#39;Teacher&#39;</span><span class="p">,</span><span class="s1">&#39;Writer, Retired, Professor&#39;</span><span class="p">,</span><span class="s1">&#39;Researcher, Historical Society&#39;</span><span class="p">,</span><span class="s1">&#39;Historian, Amateur, Local&#39;</span><span class="p">,</span><span class="s1">&#39;Editor and Historian&#39;</span><span class="p">,</span><span class="s1">&#39;Independent Researcher, Scholar&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<blockquote>
+<div><p>Compare interests to occupations</p>
+</div></blockquote>
+<p>Sure, one way to compare interests to occupations would be to look at how often certain occupations and interests co-occur. We can quantify this co-occurrence as a percentage. For example, we can find out what percentage of ‘Genealogical researchers’ have an interest in ‘Computer Science’ and so on for all combinations.</p>
+<p>Let’s calculate these percentages.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Prepare a dict to keep the results</span>
+<span class="n">results</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="c1"># Iterate over all the occupation columns</span>
+<span class="k">for</span> <span class="n">occupation</span> <span class="ow">in</span> <span class="n">occupation_columns</span><span class="p">:</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">occupation</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>  <span class="c1"># Total count for this occupation</span>
+    
+    <span class="c1"># Information holder for the current occupation</span>
+    <span class="n">results</span><span class="p">[</span><span class="n">occupation</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">results</span><span class="p">[</span><span class="n">occupation</span><span class="p">][</span><span class="s1">&#39;total&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+    <span class="n">results</span><span class="p">[</span><span class="n">occupation</span><span class="p">][</span><span class="s1">&#39;interests&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="c1"># Iterate over all the interest columns</span>
+    <span class="k">for</span> <span class="n">interest</span> <span class="ow">in</span> <span class="n">interest_columns</span><span class="p">:</span>
+        <span class="c1"># Count the number of people with this occupation that have this interest</span>
+        <span class="n">with_interest</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">occupation</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span><span class="p">][</span><span class="n">interest</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+        
+        <span class="c1"># Calculate the percentage</span>
+        <span class="n">percentage</span> <span class="o">=</span> <span class="p">(</span><span class="n">with_interest</span> <span class="o">/</span> <span class="n">total</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+
+        <span class="c1"># Store this value to our results dict</span>
+        <span class="n">results</span><span class="p">[</span><span class="n">occupation</span><span class="p">][</span><span class="s1">&#39;interests&#39;</span><span class="p">][</span><span class="n">interest</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;count&#39;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">with_interest</span><span class="p">),</span>
+            <span class="s1">&#39;percentage&#39;</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">percentage</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="p">}</span>
+
+<span class="n">results</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Genealogical researcher&#39;: {&#39;total&#39;: 295,
+  &#39;interests&#39;: {&#39;Computer Science&#39;: {&#39;count&#39;: 6, &#39;percentage&#39;: 2.03},
+   &#39;Digital Humanities&#39;: {&#39;count&#39;: 13, &#39;percentage&#39;: 4.41},
+   &#39;Education&#39;: {&#39;count&#39;: 15, &#39;percentage&#39;: 5.08},
+   &#39;Environment/Climate&#39;: {&#39;count&#39;: 7, &#39;percentage&#39;: 2.37},
+   &#39;Gender Studies&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 0.68},
+   &#39;Genealogy&#39;: {&#39;count&#39;: 236, &#39;percentage&#39;: 80.0},
+   &#39;Geography&#39;: {&#39;count&#39;: 24, &#39;percentage&#39;: 8.14},
+   &#39;Health&#39;: {&#39;count&#39;: 4, &#39;percentage&#39;: 1.36},
+   &#39;History&#39;: {&#39;count&#39;: 140, &#39;percentage&#39;: 47.46},
+   &#39;Indigenous Land Claims&#39;: {&#39;count&#39;: 11, &#39;percentage&#39;: 3.73},
+   &#39;Indigenous Studies&#39;: {&#39;count&#39;: 22, &#39;percentage&#39;: 7.46},
+   &#39;Information Science&#39;: {&#39;count&#39;: 3, &#39;percentage&#39;: 1.02},
+   &#39;Law&#39;: {&#39;count&#39;: 12, &#39;percentage&#39;: 4.07},
+   &#39;Linguistics&#39;: {&#39;count&#39;: 5, &#39;percentage&#39;: 1.69},
+   &#39;Literature&#39;: {&#39;count&#39;: 6, &#39;percentage&#39;: 2.03},
+   &#39;Political Science&#39;: {&#39;count&#39;: 13, &#39;percentage&#39;: 4.41},
+   &#39;Anthropology, Studies, Archaeology&#39;: {&#39;count&#39;: 291, &#39;percentage&#39;: 98.64},
+   &#39;History, Local, Railway&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Theology, Biblical, Psychotherapy&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Architecture, Youth, Garden&#39;: {&#39;count&#39;: 4, &#39;percentage&#39;: 1.36},
+   &#39;Religion, Youth, Equality&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0}}},
+ &#39;GLAM professional&#39;: {&#39;total&#39;: 57,
+  &#39;interests&#39;: {&#39;Computer Science&#39;: {&#39;count&#39;: 3, &#39;percentage&#39;: 5.26},
+   &#39;Digital Humanities&#39;: {&#39;count&#39;: 10, &#39;percentage&#39;: 17.54},
+   &#39;Education&#39;: {&#39;count&#39;: 9, &#39;percentage&#39;: 15.79},
+   &#39;Environment/Climate&#39;: {&#39;count&#39;: 5, &#39;percentage&#39;: 8.77},
+   &#39;Gender Studies&#39;: {&#39;count&#39;: 6, &#39;percentage&#39;: 10.53},
+   &#39;Genealogy&#39;: {&#39;count&#39;: 12, &#39;percentage&#39;: 21.05},
+   &#39;Geography&#39;: {&#39;count&#39;: 4, &#39;percentage&#39;: 7.02},
+   &#39;Health&#39;: {&#39;count&#39;: 3, &#39;percentage&#39;: 5.26},
+   &#39;History&#39;: {&#39;count&#39;: 32, &#39;percentage&#39;: 56.14},
+   &#39;Indigenous Land Claims&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 3.51},
+   &#39;Indigenous Studies&#39;: {&#39;count&#39;: 10, &#39;percentage&#39;: 17.54},
+   &#39;Information Science&#39;: {&#39;count&#39;: 8, &#39;percentage&#39;: 14.04},
+   &#39;Law&#39;: {&#39;count&#39;: 8, &#39;percentage&#39;: 14.04},
+   &#39;Linguistics&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 1.75},
+   &#39;Literature&#39;: {&#39;count&#39;: 6, &#39;percentage&#39;: 10.53},
+   &#39;Political Science&#39;: {&#39;count&#39;: 4, &#39;percentage&#39;: 7.02},
+   &#39;Anthropology, Studies, Archaeology&#39;: {&#39;count&#39;: 55, &#39;percentage&#39;: 96.49},
+   &#39;History, Local, Railway&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Theology, Biblical, Psychotherapy&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Architecture, Youth, Garden&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 3.51},
+   &#39;Religion, Youth, Equality&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0}}},
+ &#39;Government employee&#39;: {&#39;total&#39;: 30,
+  &#39;interests&#39;: {&#39;Computer Science&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 3.33},
+   &#39;Digital Humanities&#39;: {&#39;count&#39;: 3, &#39;percentage&#39;: 10.0},
+   &#39;Education&#39;: {&#39;count&#39;: 3, &#39;percentage&#39;: 10.0},
+   &#39;Environment/Climate&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 3.33},
+   &#39;Gender Studies&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Genealogy&#39;: {&#39;count&#39;: 11, &#39;percentage&#39;: 36.67},
+   &#39;Geography&#39;: {&#39;count&#39;: 4, &#39;percentage&#39;: 13.33},
+   &#39;Health&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;History&#39;: {&#39;count&#39;: 18, &#39;percentage&#39;: 60.0},
+   &#39;Indigenous Land Claims&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 6.67},
+   &#39;Indigenous Studies&#39;: {&#39;count&#39;: 6, &#39;percentage&#39;: 20.0},
+   &#39;Information Science&#39;: {&#39;count&#39;: 3, &#39;percentage&#39;: 10.0},
+   &#39;Law&#39;: {&#39;count&#39;: 6, &#39;percentage&#39;: 20.0},
+   &#39;Linguistics&#39;: {&#39;count&#39;: 4, &#39;percentage&#39;: 13.33},
+   &#39;Literature&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 6.67},
+   &#39;Political Science&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 6.67},
+   &#39;Anthropology, Studies, Archaeology&#39;: {&#39;count&#39;: 28, &#39;percentage&#39;: 93.33},
+   &#39;History, Local, Railway&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Theology, Biblical, Psychotherapy&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Architecture, Youth, Garden&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 6.67},
+   &#39;Religion, Youth, Equality&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0}}},
+ &#39;Legal researcher&#39;: {&#39;total&#39;: 27,
+  &#39;interests&#39;: {&#39;Computer Science&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Digital Humanities&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Education&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Environment/Climate&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Gender Studies&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Genealogy&#39;: {&#39;count&#39;: 3, &#39;percentage&#39;: 11.11},
+   &#39;Geography&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 7.41},
+   &#39;Health&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 7.41},
+   &#39;History&#39;: {&#39;count&#39;: 11, &#39;percentage&#39;: 40.74},
+   &#39;Indigenous Land Claims&#39;: {&#39;count&#39;: 10, &#39;percentage&#39;: 37.04},
+   &#39;Indigenous Studies&#39;: {&#39;count&#39;: 5, &#39;percentage&#39;: 18.52},
+   &#39;Information Science&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Law&#39;: {&#39;count&#39;: 17, &#39;percentage&#39;: 62.96},
+   &#39;Linguistics&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Literature&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 3.7},
+   &#39;Political Science&#39;: {&#39;count&#39;: 3, &#39;percentage&#39;: 11.11},
+   &#39;Anthropology, Studies, Archaeology&#39;: {&#39;count&#39;: 27, &#39;percentage&#39;: 100.0},
+   &#39;History, Local, Railway&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Theology, Biblical, Psychotherapy&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Architecture, Youth, Garden&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Religion, Youth, Equality&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0}}},
+ &#39;Member of the general public&#39;: {&#39;total&#39;: 308,
+  &#39;interests&#39;: {&#39;Computer Science&#39;: {&#39;count&#39;: 15, &#39;percentage&#39;: 4.87},
+   &#39;Digital Humanities&#39;: {&#39;count&#39;: 9, &#39;percentage&#39;: 2.92},
+   &#39;Education&#39;: {&#39;count&#39;: 15, &#39;percentage&#39;: 4.87},
+   &#39;Environment/Climate&#39;: {&#39;count&#39;: 14, &#39;percentage&#39;: 4.55},
+   &#39;Gender Studies&#39;: {&#39;count&#39;: 7, &#39;percentage&#39;: 2.27},
+   &#39;Genealogy&#39;: {&#39;count&#39;: 117, &#39;percentage&#39;: 37.99},
+   &#39;Geography&#39;: {&#39;count&#39;: 45, &#39;percentage&#39;: 14.61},
+   &#39;Health&#39;: {&#39;count&#39;: 14, &#39;percentage&#39;: 4.55},
+   &#39;History&#39;: {&#39;count&#39;: 205, &#39;percentage&#39;: 66.56},
+   &#39;Indigenous Land Claims&#39;: {&#39;count&#39;: 18, &#39;percentage&#39;: 5.84},
+   &#39;Indigenous Studies&#39;: {&#39;count&#39;: 38, &#39;percentage&#39;: 12.34},
+   &#39;Information Science&#39;: {&#39;count&#39;: 8, &#39;percentage&#39;: 2.6},
+   &#39;Law&#39;: {&#39;count&#39;: 15, &#39;percentage&#39;: 4.87},
+   &#39;Linguistics&#39;: {&#39;count&#39;: 7, &#39;percentage&#39;: 2.27},
+   &#39;Literature&#39;: {&#39;count&#39;: 15, &#39;percentage&#39;: 4.87},
+   &#39;Political Science&#39;: {&#39;count&#39;: 14, &#39;percentage&#39;: 4.55},
+   &#39;Anthropology, Studies, Archaeology&#39;: {&#39;count&#39;: 300, &#39;percentage&#39;: 97.4},
+   &#39;History, Local, Railway&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Theology, Biblical, Psychotherapy&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Architecture, Youth, Garden&#39;: {&#39;count&#39;: 8, &#39;percentage&#39;: 2.6},
+   &#39;Religion, Youth, Equality&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0}}},
+ &#39;Post-secondary researcher&#39;: {&#39;total&#39;: 104,
+  &#39;interests&#39;: {&#39;Computer Science&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 0.96},
+   &#39;Digital Humanities&#39;: {&#39;count&#39;: 8, &#39;percentage&#39;: 7.69},
+   &#39;Education&#39;: {&#39;count&#39;: 8, &#39;percentage&#39;: 7.69},
+   &#39;Environment/Climate&#39;: {&#39;count&#39;: 6, &#39;percentage&#39;: 5.77},
+   &#39;Gender Studies&#39;: {&#39;count&#39;: 11, &#39;percentage&#39;: 10.58},
+   &#39;Genealogy&#39;: {&#39;count&#39;: 14, &#39;percentage&#39;: 13.46},
+   &#39;Geography&#39;: {&#39;count&#39;: 8, &#39;percentage&#39;: 7.69},
+   &#39;Health&#39;: {&#39;count&#39;: 3, &#39;percentage&#39;: 2.88},
+   &#39;History&#39;: {&#39;count&#39;: 89, &#39;percentage&#39;: 85.58},
+   &#39;Indigenous Land Claims&#39;: {&#39;count&#39;: 7, &#39;percentage&#39;: 6.73},
+   &#39;Indigenous Studies&#39;: {&#39;count&#39;: 19, &#39;percentage&#39;: 18.27},
+   &#39;Information Science&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 0.96},
+   &#39;Law&#39;: {&#39;count&#39;: 8, &#39;percentage&#39;: 7.69},
+   &#39;Linguistics&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 1.92},
+   &#39;Literature&#39;: {&#39;count&#39;: 12, &#39;percentage&#39;: 11.54},
+   &#39;Political Science&#39;: {&#39;count&#39;: 8, &#39;percentage&#39;: 7.69},
+   &#39;Anthropology, Studies, Archaeology&#39;: {&#39;count&#39;: 99, &#39;percentage&#39;: 95.19},
+   &#39;History, Local, Railway&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 0.96},
+   &#39;Theology, Biblical, Psychotherapy&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 0.96},
+   &#39;Architecture, Youth, Garden&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 1.92},
+   &#39;Religion, Youth, Equality&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 0.96}}},
+ &#39;Student&#39;: {&#39;total&#39;: 214,
+  &#39;interests&#39;: {&#39;Computer Science&#39;: {&#39;count&#39;: 6, &#39;percentage&#39;: 2.8},
+   &#39;Digital Humanities&#39;: {&#39;count&#39;: 4, &#39;percentage&#39;: 1.87},
+   &#39;Education&#39;: {&#39;count&#39;: 24, &#39;percentage&#39;: 11.21},
+   &#39;Environment/Climate&#39;: {&#39;count&#39;: 14, &#39;percentage&#39;: 6.54},
+   &#39;Gender Studies&#39;: {&#39;count&#39;: 10, &#39;percentage&#39;: 4.67},
+   &#39;Genealogy&#39;: {&#39;count&#39;: 7, &#39;percentage&#39;: 3.27},
+   &#39;Geography&#39;: {&#39;count&#39;: 15, &#39;percentage&#39;: 7.01},
+   &#39;Health&#39;: {&#39;count&#39;: 5, &#39;percentage&#39;: 2.34},
+   &#39;History&#39;: {&#39;count&#39;: 101, &#39;percentage&#39;: 47.2},
+   &#39;Indigenous Land Claims&#39;: {&#39;count&#39;: 5, &#39;percentage&#39;: 2.34},
+   &#39;Indigenous Studies&#39;: {&#39;count&#39;: 28, &#39;percentage&#39;: 13.08},
+   &#39;Information Science&#39;: {&#39;count&#39;: 3, &#39;percentage&#39;: 1.4},
+   &#39;Law&#39;: {&#39;count&#39;: 23, &#39;percentage&#39;: 10.75},
+   &#39;Linguistics&#39;: {&#39;count&#39;: 7, &#39;percentage&#39;: 3.27},
+   &#39;Literature&#39;: {&#39;count&#39;: 18, &#39;percentage&#39;: 8.41},
+   &#39;Political Science&#39;: {&#39;count&#39;: 21, &#39;percentage&#39;: 9.81},
+   &#39;Anthropology, Studies, Archaeology&#39;: {&#39;count&#39;: 204, &#39;percentage&#39;: 95.33},
+   &#39;History, Local, Railway&#39;: {&#39;count&#39;: 4, &#39;percentage&#39;: 1.87},
+   &#39;Theology, Biblical, Psychotherapy&#39;: {&#39;count&#39;: 5, &#39;percentage&#39;: 2.34},
+   &#39;Architecture, Youth, Garden&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Religion, Youth, Equality&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 0.47}}},
+ &#39;Teacher&#39;: {&#39;total&#39;: 39,
+  &#39;interests&#39;: {&#39;Computer Science&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 5.13},
+   &#39;Digital Humanities&#39;: {&#39;count&#39;: 5, &#39;percentage&#39;: 12.82},
+   &#39;Education&#39;: {&#39;count&#39;: 12, &#39;percentage&#39;: 30.77},
+   &#39;Environment/Climate&#39;: {&#39;count&#39;: 5, &#39;percentage&#39;: 12.82},
+   &#39;Gender Studies&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 2.56},
+   &#39;Genealogy&#39;: {&#39;count&#39;: 6, &#39;percentage&#39;: 15.38},
+   &#39;Geography&#39;: {&#39;count&#39;: 5, &#39;percentage&#39;: 12.82},
+   &#39;Health&#39;: {&#39;count&#39;: 4, &#39;percentage&#39;: 10.26},
+   &#39;History&#39;: {&#39;count&#39;: 26, &#39;percentage&#39;: 66.67},
+   &#39;Indigenous Land Claims&#39;: {&#39;count&#39;: 3, &#39;percentage&#39;: 7.69},
+   &#39;Indigenous Studies&#39;: {&#39;count&#39;: 5, &#39;percentage&#39;: 12.82},
+   &#39;Information Science&#39;: {&#39;count&#39;: 3, &#39;percentage&#39;: 7.69},
+   &#39;Law&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 2.56},
+   &#39;Linguistics&#39;: {&#39;count&#39;: 6, &#39;percentage&#39;: 15.38},
+   &#39;Literature&#39;: {&#39;count&#39;: 3, &#39;percentage&#39;: 7.69},
+   &#39;Political Science&#39;: {&#39;count&#39;: 6, &#39;percentage&#39;: 15.38},
+   &#39;Anthropology, Studies, Archaeology&#39;: {&#39;count&#39;: 39, &#39;percentage&#39;: 100.0},
+   &#39;History, Local, Railway&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Theology, Biblical, Psychotherapy&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Architecture, Youth, Garden&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Religion, Youth, Equality&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0}}},
+ &#39;Writer, Retired, Professor&#39;: {&#39;total&#39;: 964,
+  &#39;interests&#39;: {&#39;Computer Science&#39;: {&#39;count&#39;: 27, &#39;percentage&#39;: 2.8},
+   &#39;Digital Humanities&#39;: {&#39;count&#39;: 42, &#39;percentage&#39;: 4.36},
+   &#39;Education&#39;: {&#39;count&#39;: 68, &#39;percentage&#39;: 7.05},
+   &#39;Environment/Climate&#39;: {&#39;count&#39;: 46, &#39;percentage&#39;: 4.77},
+   &#39;Gender Studies&#39;: {&#39;count&#39;: 32, &#39;percentage&#39;: 3.32},
+   &#39;Genealogy&#39;: {&#39;count&#39;: 329, &#39;percentage&#39;: 34.13},
+   &#39;Geography&#39;: {&#39;count&#39;: 93, &#39;percentage&#39;: 9.65},
+   &#39;Health&#39;: {&#39;count&#39;: 32, &#39;percentage&#39;: 3.32},
+   &#39;History&#39;: {&#39;count&#39;: 522, &#39;percentage&#39;: 54.15},
+   &#39;Indigenous Land Claims&#39;: {&#39;count&#39;: 50, &#39;percentage&#39;: 5.19},
+   &#39;Indigenous Studies&#39;: {&#39;count&#39;: 114, &#39;percentage&#39;: 11.83},
+   &#39;Information Science&#39;: {&#39;count&#39;: 24, &#39;percentage&#39;: 2.49},
+   &#39;Law&#39;: {&#39;count&#39;: 73, &#39;percentage&#39;: 7.57},
+   &#39;Linguistics&#39;: {&#39;count&#39;: 25, &#39;percentage&#39;: 2.59},
+   &#39;Literature&#39;: {&#39;count&#39;: 54, &#39;percentage&#39;: 5.6},
+   &#39;Political Science&#39;: {&#39;count&#39;: 54, &#39;percentage&#39;: 5.6},
+   &#39;Anthropology, Studies, Archaeology&#39;: {&#39;count&#39;: 937, &#39;percentage&#39;: 97.2},
+   &#39;History, Local, Railway&#39;: {&#39;count&#39;: 5, &#39;percentage&#39;: 0.52},
+   &#39;Theology, Biblical, Psychotherapy&#39;: {&#39;count&#39;: 5, &#39;percentage&#39;: 0.52},
+   &#39;Architecture, Youth, Garden&#39;: {&#39;count&#39;: 15, &#39;percentage&#39;: 1.56},
+   &#39;Religion, Youth, Equality&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 0.21}}},
+ &#39;Researcher, Historical Society&#39;: {&#39;total&#39;: 15,
+  &#39;interests&#39;: {&#39;Computer Science&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Digital Humanities&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 13.33},
+   &#39;Education&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 6.67},
+   &#39;Environment/Climate&#39;: {&#39;count&#39;: 4, &#39;percentage&#39;: 26.67},
+   &#39;Gender Studies&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Genealogy&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 13.33},
+   &#39;Geography&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 13.33},
+   &#39;Health&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 13.33},
+   &#39;History&#39;: {&#39;count&#39;: 12, &#39;percentage&#39;: 80.0},
+   &#39;Indigenous Land Claims&#39;: {&#39;count&#39;: 3, &#39;percentage&#39;: 20.0},
+   &#39;Indigenous Studies&#39;: {&#39;count&#39;: 4, &#39;percentage&#39;: 26.67},
+   &#39;Information Science&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 6.67},
+   &#39;Law&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 6.67},
+   &#39;Linguistics&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 13.33},
+   &#39;Literature&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Political Science&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Anthropology, Studies, Archaeology&#39;: {&#39;count&#39;: 15, &#39;percentage&#39;: 100.0},
+   &#39;History, Local, Railway&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Theology, Biblical, Psychotherapy&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Architecture, Youth, Garden&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Religion, Youth, Equality&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0}}},
+ &#39;Historian, Amateur, Local&#39;: {&#39;total&#39;: 14,
+  &#39;interests&#39;: {&#39;Computer Science&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 7.14},
+   &#39;Digital Humanities&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 14.29},
+   &#39;Education&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Environment/Climate&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 14.29},
+   &#39;Gender Studies&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Genealogy&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 14.29},
+   &#39;Geography&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 7.14},
+   &#39;Health&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;History&#39;: {&#39;count&#39;: 13, &#39;percentage&#39;: 92.86},
+   &#39;Indigenous Land Claims&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Indigenous Studies&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 14.29},
+   &#39;Information Science&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Law&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Linguistics&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Literature&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Political Science&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 14.29},
+   &#39;Anthropology, Studies, Archaeology&#39;: {&#39;count&#39;: 13, &#39;percentage&#39;: 92.86},
+   &#39;History, Local, Railway&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Theology, Biblical, Psychotherapy&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Architecture, Youth, Garden&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 7.14},
+   &#39;Religion, Youth, Equality&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0}}},
+ &#39;Editor and Historian&#39;: {&#39;total&#39;: 6,
+  &#39;interests&#39;: {&#39;Computer Science&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Digital Humanities&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 16.67},
+   &#39;Education&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Environment/Climate&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Gender Studies&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Genealogy&#39;: {&#39;count&#39;: 3, &#39;percentage&#39;: 50.0},
+   &#39;Geography&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Health&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;History&#39;: {&#39;count&#39;: 5, &#39;percentage&#39;: 83.33},
+   &#39;Indigenous Land Claims&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Indigenous Studies&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Information Science&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Law&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 33.33},
+   &#39;Linguistics&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Literature&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Political Science&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Anthropology, Studies, Archaeology&#39;: {&#39;count&#39;: 5, &#39;percentage&#39;: 83.33},
+   &#39;History, Local, Railway&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Theology, Biblical, Psychotherapy&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Architecture, Youth, Garden&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 16.67},
+   &#39;Religion, Youth, Equality&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0}}},
+ &#39;Independent Researcher, Scholar&#39;: {&#39;total&#39;: 6,
+  &#39;interests&#39;: {&#39;Computer Science&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Digital Humanities&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Education&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Environment/Climate&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Gender Studies&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Genealogy&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 33.33},
+   &#39;Geography&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Health&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;History&#39;: {&#39;count&#39;: 6, &#39;percentage&#39;: 100.0},
+   &#39;Indigenous Land Claims&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 16.67},
+   &#39;Indigenous Studies&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 16.67},
+   &#39;Information Science&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Law&#39;: {&#39;count&#39;: 2, &#39;percentage&#39;: 33.33},
+   &#39;Linguistics&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Literature&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 16.67},
+   &#39;Political Science&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 16.67},
+   &#39;Anthropology, Studies, Archaeology&#39;: {&#39;count&#39;: 5, &#39;percentage&#39;: 83.33},
+   &#39;History, Local, Railway&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Theology, Biblical, Psychotherapy&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Architecture, Youth, Garden&#39;: {&#39;count&#39;: 0, &#39;percentage&#39;: 0.0},
+   &#39;Religion, Youth, Equality&#39;: {&#39;count&#39;: 1, &#39;percentage&#39;: 16.67}}}}
+</pre></div>
+</div>
+</div>
+</div>
+<p>The comparison between interests and occupations shows different patterns based on the occupation type. Here are some key insights for a few of the occupation types:</p>
+<ol class="arabic simple">
+<li><p><strong>Genealogical researchers:</strong> The top interest in this group is ‘Genealogy’ (80.0%), followed by ‘History’ (47.46%).</p></li>
+<li><p><strong>GLAM professionals:</strong> The top interest among this group is ‘History’ (56.14%), with ‘Genealogy’ and ‘Digital Humanities’ coming up next (21.05% and 17.54% respectively).</p></li>
+<li><p><strong>Government employees:</strong> ‘History’ (60.0%) and ‘Genealogy’ (36.67%) are the two highest interests in this occupation group.</p></li>
+<li><p><strong>Legal researchers:</strong> This group has a high interest in ‘Law’(62.96%), naturally, followed by ‘History’ (40.74%).</p></li>
+<li><p><strong>Members of the general public:</strong> This group showed diverse interests. The highest interests are ‘History’ (66.56%) and ‘Genealogy’ (37.99%).</p></li>
+</ol>
+<p>These percentages represent the portion of individuals within each occupation group that have the specified interest. Note that an individual can have more than one interest. Therefore, the percentages for each occupation may not add up to 100%.</p>
+<p>Let me know if you need further analysis or exploration of different aspects.</p>
 <a style='text-decoration:none;line-height:16px;display:flex;color:#5B5B62;padding:10px;justify-content:end;' href='https://deepnote.com?utm_source=created-in-deepnote-cell&projectId=78bfc222-b866-4a43-b8a8-c2a8d5467ce5' target="_blank">
 <img alt='Created in deepnote.com' style='display:inline;max-height:16px;margin:0px;margin-right:7.5px;' src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iODBweCIgaGVpZ2h0PSI4MHB4IiB2aWV3Qm94PSIwIDAgODAgODAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU0LjEgKDc2NDkwKSAtIGh0dHBzOi8vc2tldGNoYXBwLmNvbSAtLT4KICAgIDx0aXRsZT5Hcm91cCAzPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IkxhbmRpbmciIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJBcnRib2FyZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEyMzUuMDAwMDAwLCAtNzkuMDAwMDAwKSI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjM1LjAwMDAwMCwgNzkuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iUGF0aC0yMCIgZmlsbD0iIzAyNjVCNCIgcG9pbnRzPSIyLjM3NjIzNzYyIDgwIDM4LjA0NzY2NjcgODAgNTcuODIxNzgyMiA3My44MDU3NTkyIDU3LjgyMTc4MjIgMzIuNzU5MjczOSAzOS4xNDAyMjc4IDMxLjY4MzE2ODMiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0zNS4wMDc3MTgsODAgQzQyLjkwNjIwMDcsNzYuNDU0OTM1OCA0Ny41NjQ5MTY3LDcxLjU0MjI2NzEgNDguOTgzODY2LDY1LjI2MTk5MzkgQzUxLjExMjI4OTksNTUuODQxNTg0MiA0MS42NzcxNzk1LDQ5LjIxMjIyODQgMjUuNjIzOTg0Niw0OS4yMTIyMjg0IEMyNS40ODQ5Mjg5LDQ5LjEyNjg0NDggMjkuODI2MTI5Niw0My4yODM4MjQ4IDM4LjY0NzU4NjksMzEuNjgzMTY4MyBMNzIuODcxMjg3MSwzMi41NTQ0MjUgTDY1LjI4MDk3Myw2Ny42NzYzNDIxIEw1MS4xMTIyODk5LDc3LjM3NjE0NCBMMzUuMDA3NzE4LDgwIFoiIGlkPSJQYXRoLTIyIiBmaWxsPSIjMDAyODY4Ij48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMCwzNy43MzA0NDA1IEwyNy4xMTQ1MzcsMC4yNTcxMTE0MzYgQzYyLjM3MTUxMjMsLTEuOTkwNzE3MDEgODAsMTAuNTAwMzkyNyA4MCwzNy43MzA0NDA1IEM4MCw2NC45NjA0ODgyIDY0Ljc3NjUwMzgsNzkuMDUwMzQxNCAzNC4zMjk1MTEzLDgwIEM0Ny4wNTUzNDg5LDc3LjU2NzA4MDggNTMuNDE4MjY3Nyw3MC4zMTM2MTAzIDUzLjQxODI2NzcsNTguMjM5NTg4NSBDNTMuNDE4MjY3Nyw0MC4xMjg1NTU3IDM2LjMwMzk1NDQsMzcuNzMwNDQwNSAyNS4yMjc0MTcsMzcuNzMwNDQwNSBDMTcuODQzMDU4NiwzNy43MzA0NDA1IDkuNDMzOTE5NjYsMzcuNzMwNDQwNSAwLDM3LjczMDQ0MDUgWiIgaWQ9IlBhdGgtMTkiIGZpbGw9IiMzNzkzRUYiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+' > </img>
 Created in <span style='font-weight:600;margin-left:4px;'>Deepnote</span></a>
