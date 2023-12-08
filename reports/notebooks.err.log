@@ -15,90 +15,38 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-from pandas.plotting import parallel_coordinates
+import matplotlib.pyplot as plt
+import pandas as pd
+from pandas.plotting import radviz
 df = pd.read_csv('cleaned.csv')
+df = df.drop('id', axis=1)
+df = df.drop('Other Identification', axis=1)
+df = df.drop('Other Interest', axis=1)
 plt.figure()
-parallel_coordinates(df, "geo")
+rslt_df = df[df['geo'] in ['Toronto, Canada',  'Ottawa, Canada']]
+
+radviz(rslt_df, "geo")
 ------------------
 
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mValueError[0m                                Traceback (most recent call last)
-Cell [0;32mIn[2], line 4[0m
-[1;32m      2[0m df [38;5;241m=[39m pd[38;5;241m.[39mread_csv([38;5;124m'[39m[38;5;124mcleaned.csv[39m[38;5;124m'[39m)
-[1;32m      3[0m plt[38;5;241m.[39mfigure()
-[0;32m----> 4[0m [43mparallel_coordinates[49m[43m([49m[43mdf[49m[43m,[49m[43m [49m[38;5;124;43m"[39;49m[38;5;124;43mgeo[39;49m[38;5;124;43m"[39;49m[43m)[49m
+[0;32m/tmp/ipykernel_455118/2982026475.py[0m in [0;36m?[0;34m()[0m
+[1;32m      5[0m [0mdf[0m [0;34m=[0m [0mdf[0m[0;34m.[0m[0mdrop[0m[0;34m([0m[0;34m'id'[0m[0;34m,[0m [0maxis[0m[0;34m=[0m[0;36m1[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      6[0m [0mdf[0m [0;34m=[0m [0mdf[0m[0;34m.[0m[0mdrop[0m[0;34m([0m[0;34m'Other Identification'[0m[0;34m,[0m [0maxis[0m[0;34m=[0m[0;36m1[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      7[0m [0mdf[0m [0;34m=[0m [0mdf[0m[0;34m.[0m[0mdrop[0m[0;34m([0m[0;34m'Other Interest'[0m[0;34m,[0m [0maxis[0m[0;34m=[0m[0;36m1[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      8[0m [0mplt[0m[0;34m.[0m[0mfigure[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 9[0;31m [0mrslt_df[0m [0;34m=[0m [0mdf[0m[0;34m[[0m[0mdf[0m[0;34m[[0m[0;34m'geo'[0m[0;34m][0m [0;32min[0m [0;34m[[0m[0;34m'Toronto, Canada'[0m[0;34m,[0m  [0;34m'Ottawa, Canada'[0m[0;34m][0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     10[0m [0;34m[0m[0m
+[1;32m     11[0m [0mradviz[0m[0;34m([0m[0mrslt_df[0m[0;34m,[0m [0;34m"geo"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 
-File [0;32m~/.local/lib/python3.10/site-packages/pandas/plotting/_misc.py:513[0m, in [0;36mparallel_coordinates[0;34m(frame, class_column, cols, ax, color, use_columns, xticks, colormap, axvlines, axvlines_kwds, sort_labels, **kwargs)[0m
-[1;32m    465[0m [38;5;250m[39m[38;5;124;03m"""[39;00m
-[1;32m    466[0m [38;5;124;03mParallel coordinates plotting.[39;00m
-[1;32m    467[0m 
-[0;32m   (...)[0m
-[1;32m    510[0m [38;5;124;03m    ... )  # doctest: +SKIP[39;00m
-[1;32m    511[0m [38;5;124;03m"""[39;00m
-[1;32m    512[0m plot_backend [38;5;241m=[39m _get_plot_backend([38;5;124m"[39m[38;5;124mmatplotlib[39m[38;5;124m"[39m)
-[0;32m--> 513[0m [38;5;28;01mreturn[39;00m [43mplot_backend[49m[38;5;241;43m.[39;49m[43mparallel_coordinates[49m[43m([49m
-[1;32m    514[0m [43m    [49m[43mframe[49m[38;5;241;43m=[39;49m[43mframe[49m[43m,[49m
-[1;32m    515[0m [43m    [49m[43mclass_column[49m[38;5;241;43m=[39;49m[43mclass_column[49m[43m,[49m
-[1;32m    516[0m [43m    [49m[43mcols[49m[38;5;241;43m=[39;49m[43mcols[49m[43m,[49m
-[1;32m    517[0m [43m    [49m[43max[49m[38;5;241;43m=[39;49m[43max[49m[43m,[49m
-[1;32m    518[0m [43m    [49m[43mcolor[49m[38;5;241;43m=[39;49m[43mcolor[49m[43m,[49m
-[1;32m    519[0m [43m    [49m[43muse_columns[49m[38;5;241;43m=[39;49m[43muse_columns[49m[43m,[49m
-[1;32m    520[0m [43m    [49m[43mxticks[49m[38;5;241;43m=[39;49m[43mxticks[49m[43m,[49m
-[1;32m    521[0m [43m    [49m[43mcolormap[49m[38;5;241;43m=[39;49m[43mcolormap[49m[43m,[49m
-[1;32m    522[0m [43m    [49m[43maxvlines[49m[38;5;241;43m=[39;49m[43maxvlines[49m[43m,[49m
-[1;32m    523[0m [43m    [49m[43maxvlines_kwds[49m[38;5;241;43m=[39;49m[43maxvlines_kwds[49m[43m,[49m
-[1;32m    524[0m [43m    [49m[43msort_labels[49m[38;5;241;43m=[39;49m[43msort_labels[49m[43m,[49m
-[1;32m    525[0m [43m    [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m,[49m
-[1;32m    526[0m [43m[49m[43m)[49m
+[0;32m~/.local/lib/python3.10/site-packages/pandas/core/generic.py[0m in [0;36m?[0;34m(self)[0m
+[1;32m   1517[0m     [0;34m@[0m[0mfinal[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1518[0m     [0;32mdef[0m [0m__nonzero__[0m[0;34m([0m[0mself[0m[0;34m)[0m [0;34m->[0m [0mNoReturn[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 1519[0;31m         raise ValueError(
+[0m[1;32m   1520[0m             [0;34mf"The truth value of a {type(self).__name__} is ambiguous. "[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1521[0m             [0;34m"Use a.empty, a.bool(), a.item(), a.any() or a.all()."[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1522[0m         )
 
-File [0;32m~/.local/lib/python3.10/site-packages/pandas/plotting/_matplotlib/misc.py:411[0m, in [0;36mparallel_coordinates[0;34m(frame, class_column, cols, ax, color, use_columns, xticks, colormap, axvlines, axvlines_kwds, sort_labels, **kwds)[0m
-[1;32m    409[0m [38;5;28;01mif[39;00m label [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m used_legends:
-[1;32m    410[0m     used_legends[38;5;241m.[39madd(label)
-[0;32m--> 411[0m     [43max[49m[38;5;241;43m.[39;49m[43mplot[49m[43m([49m[43mx[49m[43m,[49m[43m [49m[43my[49m[43m,[49m[43m [49m[43mcolor[49m[38;5;241;43m=[39;49m[43mcolors[49m[43m[[49m[43mkls[49m[43m][49m[43m,[49m[43m [49m[43mlabel[49m[38;5;241;43m=[39;49m[43mlabel[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwds[49m[43m)[49m
-[1;32m    412[0m [38;5;28;01melse[39;00m:
-[1;32m    413[0m     ax[38;5;241m.[39mplot(x, y, color[38;5;241m=[39mcolors[kls], [38;5;241m*[39m[38;5;241m*[39mkwds)
-
-File [0;32m~/.local/lib/python3.10/site-packages/matplotlib/axes/_axes.py:1723[0m, in [0;36mAxes.plot[0;34m(self, scalex, scaley, data, *args, **kwargs)[0m
-[1;32m   1721[0m lines [38;5;241m=[39m [[38;5;241m*[39m[38;5;28mself[39m[38;5;241m.[39m_get_lines([38;5;28mself[39m, [38;5;241m*[39margs, data[38;5;241m=[39mdata, [38;5;241m*[39m[38;5;241m*[39mkwargs)]
-[1;32m   1722[0m [38;5;28;01mfor[39;00m line [38;5;129;01min[39;00m lines:
-[0;32m-> 1723[0m     [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43madd_line[49m[43m([49m[43mline[49m[43m)[49m
-[1;32m   1724[0m [38;5;28;01mif[39;00m scalex:
-[1;32m   1725[0m     [38;5;28mself[39m[38;5;241m.[39m_request_autoscale_view([38;5;124m"[39m[38;5;124mx[39m[38;5;124m"[39m)
-
-File [0;32m~/.local/lib/python3.10/site-packages/matplotlib/axes/_base.py:2309[0m, in [0;36m_AxesBase.add_line[0;34m(self, line)[0m
-[1;32m   2306[0m [38;5;28;01mif[39;00m line[38;5;241m.[39mget_clip_path() [38;5;129;01mis[39;00m [38;5;28;01mNone[39;00m:
-[1;32m   2307[0m     line[38;5;241m.[39mset_clip_path([38;5;28mself[39m[38;5;241m.[39mpatch)
-[0;32m-> 2309[0m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_update_line_limits[49m[43m([49m[43mline[49m[43m)[49m
-[1;32m   2310[0m [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m line[38;5;241m.[39mget_label():
-[1;32m   2311[0m     line[38;5;241m.[39mset_label([38;5;124mf[39m[38;5;124m'[39m[38;5;124m_child[39m[38;5;132;01m{[39;00m[38;5;28mlen[39m([38;5;28mself[39m[38;5;241m.[39m_children)[38;5;132;01m}[39;00m[38;5;124m'[39m)
-
-File [0;32m~/.local/lib/python3.10/site-packages/matplotlib/axes/_base.py:2332[0m, in [0;36m_AxesBase._update_line_limits[0;34m(self, line)[0m
-[1;32m   2328[0m [38;5;28;01mdef[39;00m [38;5;21m_update_line_limits[39m([38;5;28mself[39m, line):
-[1;32m   2329[0m [38;5;250m    [39m[38;5;124;03m"""[39;00m
-[1;32m   2330[0m [38;5;124;03m    Figures out the data limit of the given line, updating self.dataLim.[39;00m
-[1;32m   2331[0m [38;5;124;03m    """[39;00m
-[0;32m-> 2332[0m     path [38;5;241m=[39m [43mline[49m[38;5;241;43m.[39;49m[43mget_path[49m[43m([49m[43m)[49m
-[1;32m   2333[0m     [38;5;28;01mif[39;00m path[38;5;241m.[39mvertices[38;5;241m.[39msize [38;5;241m==[39m [38;5;241m0[39m:
-[1;32m   2334[0m         [38;5;28;01mreturn[39;00m
-
-File [0;32m~/.local/lib/python3.10/site-packages/matplotlib/lines.py:1032[0m, in [0;36mLine2D.get_path[0;34m(self)[0m
-[1;32m   1030[0m [38;5;250m[39m[38;5;124;03m"""Return the `~matplotlib.path.Path` associated with this line."""[39;00m
-[1;32m   1031[0m [38;5;28;01mif[39;00m [38;5;28mself[39m[38;5;241m.[39m_invalidy [38;5;129;01mor[39;00m [38;5;28mself[39m[38;5;241m.[39m_invalidx:
-[0;32m-> 1032[0m     [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mrecache[49m[43m([49m[43m)[49m
-[1;32m   1033[0m [38;5;28;01mreturn[39;00m [38;5;28mself[39m[38;5;241m.[39m_path
-
-File [0;32m~/.local/lib/python3.10/site-packages/matplotlib/lines.py:674[0m, in [0;36mLine2D.recache[0;34m(self, always)[0m
-[1;32m    672[0m [38;5;28;01mif[39;00m always [38;5;129;01mor[39;00m [38;5;28mself[39m[38;5;241m.[39m_invalidy:
-[1;32m    673[0m     yconv [38;5;241m=[39m [38;5;28mself[39m[38;5;241m.[39mconvert_yunits([38;5;28mself[39m[38;5;241m.[39m_yorig)
-[0;32m--> 674[0m     y [38;5;241m=[39m [43m_to_unmasked_float_array[49m[43m([49m[43myconv[49m[43m)[49m[38;5;241m.[39mravel()
-[1;32m    675[0m [38;5;28;01melse[39;00m:
-[1;32m    676[0m     y [38;5;241m=[39m [38;5;28mself[39m[38;5;241m.[39m_y
-
-File [0;32m~/.local/lib/python3.10/site-packages/matplotlib/cbook.py:1345[0m, in [0;36m_to_unmasked_float_array[0;34m(x)[0m
-[1;32m   1343[0m     [38;5;28;01mreturn[39;00m np[38;5;241m.[39mma[38;5;241m.[39masarray(x, [38;5;28mfloat[39m)[38;5;241m.[39mfilled(np[38;5;241m.[39mnan)
-[1;32m   1344[0m [38;5;28;01melse[39;00m:
-[0;32m-> 1345[0m     [38;5;28;01mreturn[39;00m [43mnp[49m[38;5;241;43m.[39;49m[43masarray[49m[43m([49m[43mx[49m[43m,[49m[43m [49m[38;5;28;43mfloat[39;49m[43m)[49m
-
-[0;31mValueError[0m: could not convert string to float: 'chinese history in canada'
+[0;31mValueError[0m: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
 
