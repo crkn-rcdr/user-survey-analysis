@@ -23,13 +23,7 @@ write_list = []
 
 def get_location(ip_address):
     response = requests.get(f'https://ipapi.co/{ip_address}/json/').json()
-    location_data = {
-        "ip": ip_address,
-        "city": response.get("city"),
-        "region": response.get("region"),
-        "country": response.get("country_name")
-    }
-    return location_data["city"] + ", " + location_data["country"]
+    return [response.get("city"), response.get("region"), response.get("country_name"), response.get("latitude"), response.get("longitude")]
 
 def parseRaw():
     # Open file  
@@ -44,50 +38,59 @@ def parseRaw():
             if i == 0:
                 write_list.append([
                     #Identifications
-                    'id', #A - 0
-                    'geo', #E - 4
+                    'id', 
+                    'city', 
+                    'region', 
+                    'country_name', 
+                    'latitude', 
+                    'longitude', 
 
                     #Descriptor
-                    'Genealogical researcher', #J - 9
-                    'GLAM professional', #K - 10
-                    'Government employee', #L - 11
-                    'Legal researcher',	#M - 12
-                    'Member of the general public', #N - 13
-                    'Post-secondary researcher', #O - 14
-                    'Student', #P - 15
-                    'Teacher', #Q - 16
-                    'Other Identification',	#R - 17
+                    'Genealogical researcher', 
+                    'GLAM professional', 
+                    'Government employee', 
+                    'Legal researcher',	
+                    'Member of the general public',
+                    'Post-secondary researcher', 
+                    'Student', 
+                    'Teacher', 
+                    'Other Identification',	
 
                     #Interests
-                    'Computer Science', #S - 18
-                    'Digital Humanities', #T - 19
-                    'Education', #U - 20
-                    'Environment/Climate', #V - 21
-                    'Gender Studies', #W - 22
-                    'Genealogy', #X - 23
-                    'Geography', #Y - 24
-                    'Health', #Z - 25
-                    'History', #AA - 26
-                    'Indigenous Land Claims', #AB - 27
-                    'Indigenous Studies', #AC - 28
-                    'Information Science', #AD - 29
-                    'Law', #AE - 30
-                    'Linguistics', #AF - 31
-                    'Literature', #AG - 32
-                    'Political Science', #AH - 33
-                    'Other Interest' #AI - 34
+                    'Computer Science', 
+                    'Digital Humanities', 
+                    'Education', 
+                    'Environment/Climate', 
+                    'Gender Studies', 
+                    'Genealogy', 
+                    'Geography', 
+                    'Health', 
+                    'History', 
+                    'Indigenous Land Claims',
+                    'Indigenous Studies', 
+                    'Information Science', 
+                    'Law', 
+                    'Linguistics',
+                    'Literature', 
+                    'Political Science', 
+                    'Other Interest' 
                 ])
                 print(write_list[0])
             else:
                 try:
                     geo = get_location(row[4])
                 except:
-                    geo = "N/A"
+                    geo = ["N/A", "N/A", "N/A", "N/A", "N/A"]
 
                 row_list = [
                     #Identifications
                     row[0],
-                    geo,
+                    geo[0],
+                    geo[1],
+                    geo[2],
+                    geo[3],
+                    geo[4],
+
 
                     #Descriptor
                     1 if len(row[9]) else 0,
@@ -121,8 +124,10 @@ def parseRaw():
                 ]
 
                 # Some glam people didn't say glam when they should have
-                if 'librarian' in row_list[10] or 'archivist' in row_list[10] or 'library' in row_list[10] or 'archive' in row_list[10]:
-                    row_list[3] = 1
+                if 'librarian' in row_list[14] or 'archivist' in row_list[14] or 'library' in row_list[14] or 'archive' in row_list[14]:
+                    row_list[7] = 1
+                    row_list[14] = ''
+
 
                 # 10, 27 - still need to normalize
                 print(row_list)
@@ -201,4 +206,6 @@ def byGeo():
         df = pandas.DataFrame(make_sheet(titles_b, geo_map_b))
         df.to_csv("geo_q2.csv", encoding='utf-8', index=False)
 
-byGeo()
+#byGeo()
+
+parseRaw()
