@@ -570,9 +570,9 @@ For ‘Social Studies’, I’ll look for the words ‘social’, ‘society’,
 <span class="n">keywords</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;Archaeology/Anthropology&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;archaeology&#39;</span><span class="p">,</span> <span class="s1">&#39;anthropology&#39;</span><span class="p">],</span>
     <span class="s1">&#39;Religious Studies&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;religion&#39;</span><span class="p">,</span> <span class="s1">&#39;religious&#39;</span><span class="p">,</span> <span class="s1">&#39;theology&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;Family History&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;family&#39;</span><span class="p">,</span> <span class="s1">&#39;ancestors&#39;</span><span class="p">,</span> <span class="s1">&#39;genealogy&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;Local History&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;local&#39;</span><span class="p">,</span> <span class="s1">&#39;community&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;Social Studies&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;social&#39;</span><span class="p">,</span> <span class="s1">&#39;society&#39;</span><span class="p">,</span> <span class="s1">&#39;studies&#39;</span><span class="p">]</span>
+    <span class="s1">&#39;Family History&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;family&#39;</span><span class="p">,</span> <span class="s1">&#39;ancestors&#39;</span><span class="p">,</span> <span class="s1">&#39;genealogy&#39;</span><span class="p">,</span> <span class="s1">&#39;parent&#39;</span><span class="p">,</span> <span class="s1">&#39;sister&#39;</span><span class="p">,</span> <span class="s1">&#39;brother&#39;</span><span class="p">,</span> <span class="s1">&#39;home children&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;Local History&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;local&#39;</span><span class="p">,</span> <span class="s1">&#39;community&#39;</span><span class="p">,</span> <span class="s1">&#39;city&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;Social Studies&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;social&#39;</span><span class="p">,</span> <span class="s1">&#39;society&#39;</span><span class="p">,</span> <span class="s1">&#39;studies&#39;</span><span class="p">,</span> <span class="s1">&#39;ethnic&#39;</span><span class="p">]</span>
 <span class="p">}</span>
 
 <span class="k">for</span> <span class="n">category</span><span class="p">,</span> <span class="n">words</span> <span class="ow">in</span> <span class="n">keywords</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
@@ -1326,9 +1326,9 @@ Literature                   55
 Political Science            57
 Archaeology/Anthropology      5
 Religious Studies             5
-Family History                0
+Family History                2
 Local History                 0
-Social Studies                6
+Social Studies                1
 dtype: int64
 </pre></div>
 </div>
@@ -1347,10 +1347,493 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/1fb118c8d1e6cbcb0a654a81d1d57458b7cb3d4b2aacf7380c433d65228654a3.png" src="_images/1fb118c8d1e6cbcb0a654a81d1d57458b7cb3d4b2aacf7380c433d65228654a3.png" />
+<img alt="_images/2942236b2578acad9ae505981583f8bc195d39e13227b5ac544cbd01cac35988.png" src="_images/2942236b2578acad9ae505981583f8bc195d39e13227b5ac544cbd01cac35988.png" />
 </div>
 </div>
 <p>The bar chart shows the count of each interest in the data. ‘History’ and ‘Genealogy’ are the top two interests among the respondents, whereas ‘Family History’ and ‘Local History’ have no mentions. ‘Archaeology/Anthropology’, ‘Religious Studies’ and ‘Social Studies’ are the next least common interests among the surveyed group.</p>
+<blockquote>
+<div><p>Compare peoples occupation to their interests</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># First, let&#39;s get a sense of how are occupations related to interests</span>
+<span class="c1"># For this, I will create a cross-correlation matrix between occupations and interests.</span>
+<span class="c1"># This matrix will measure the linear relationships between each pair of occupation and interest.</span>
+ 
+<span class="c1"># Getting relevant columns</span>
+<span class="n">occupations_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">occupations_columns</span><span class="p">]</span>
+<span class="n">interests_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">interests_columns</span><span class="p">]</span>
+
+<span class="c1"># Concatenating the data</span>
+<span class="n">combined_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">occupations_data</span><span class="p">,</span> <span class="n">interests_data</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">combined_data</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+
+<span class="c1"># Selecting only the correlations between occupations and interests</span>
+<span class="n">occupation_interest_correlation</span> <span class="o">=</span> <span class="n">correlation_matrix</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">occupations_columns</span><span class="p">,</span> <span class="n">interests_columns</span><span class="p">]</span>
+
+<span class="n">occupation_interest_correlation</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Computer Science</th>
+      <th>Digital Humanities</th>
+      <th>Education</th>
+      <th>Environment/Climate</th>
+      <th>Gender Studies</th>
+      <th>Genealogy</th>
+      <th>Geography</th>
+      <th>Health</th>
+      <th>History</th>
+      <th>Indigenous Land Claims</th>
+      <th>...</th>
+      <th>Information Science</th>
+      <th>Law</th>
+      <th>Linguistics</th>
+      <th>Literature</th>
+      <th>Political Science</th>
+      <th>Archaeology/Anthropology</th>
+      <th>Religious Studies</th>
+      <th>Family History</th>
+      <th>Local History</th>
+      <th>Social Studies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Genealogical researcher</th>
+      <td>-0.029460</td>
+      <td>-0.008238</td>
+      <td>-0.045397</td>
+      <td>-0.081518</td>
+      <td>-0.092006</td>
+      <td>0.632625</td>
+      <td>-0.031066</td>
+      <td>-0.072275</td>
+      <td>-0.104609</td>
+      <td>-0.047005</td>
+      <td>...</td>
+      <td>-0.060864</td>
+      <td>-0.088979</td>
+      <td>-0.039533</td>
+      <td>-0.097455</td>
+      <td>-0.035249</td>
+      <td>-0.045579</td>
+      <td>-0.045579</td>
+      <td>0.020246</td>
+      <td>NaN</td>
+      <td>0.048961</td>
+    </tr>
+    <tr>
+      <th>GLAM professional</th>
+      <td>0.036907</td>
+      <td>0.149435</td>
+      <td>0.086534</td>
+      <td>0.039828</td>
+      <td>0.102541</td>
+      <td>-0.065288</td>
+      <td>-0.021145</td>
+      <td>0.025499</td>
+      <td>0.003049</td>
+      <td>-0.020274</td>
+      <td>...</td>
+      <td>0.181805</td>
+      <td>0.057498</td>
+      <td>-0.014137</td>
+      <td>0.054483</td>
+      <td>0.014268</td>
+      <td>-0.017339</td>
+      <td>-0.017339</td>
+      <td>-0.010950</td>
+      <td>NaN</td>
+      <td>-0.007739</td>
+    </tr>
+    <tr>
+      <th>Government employee</th>
+      <td>0.005833</td>
+      <td>0.044226</td>
+      <td>0.021742</td>
+      <td>-0.014577</td>
+      <td>-0.031811</td>
+      <td>0.011268</td>
+      <td>0.022564</td>
+      <td>-0.032824</td>
+      <td>0.015805</td>
+      <td>0.010063</td>
+      <td>...</td>
+      <td>0.084610</td>
+      <td>0.080237</td>
+      <td>0.115502</td>
+      <td>0.009209</td>
+      <td>0.007546</td>
+      <td>-0.012403</td>
+      <td>-0.012403</td>
+      <td>-0.007833</td>
+      <td>NaN</td>
+      <td>-0.005536</td>
+    </tr>
+    <tr>
+      <th>Legal researcher</th>
+      <td>-0.028128</td>
+      <td>-0.036803</td>
+      <td>-0.045113</td>
+      <td>-0.038812</td>
+      <td>-0.030132</td>
+      <td>-0.079203</td>
+      <td>-0.012124</td>
+      <td>0.036985</td>
+      <td>-0.049423</td>
+      <td>0.233322</td>
+      <td>...</td>
+      <td>-0.026538</td>
+      <td>0.342803</td>
+      <td>-0.027607</td>
+      <td>-0.012923</td>
+      <td>0.039075</td>
+      <td>-0.011749</td>
+      <td>-0.011749</td>
+      <td>-0.007420</td>
+      <td>NaN</td>
+      <td>-0.005244</td>
+    </tr>
+    <tr>
+      <th>Member of the general public</th>
+      <td>0.084180</td>
+      <td>-0.055240</td>
+      <td>-0.052459</td>
+      <td>-0.018867</td>
+      <td>-0.034505</td>
+      <td>0.061279</td>
+      <td>0.114393</td>
+      <td>0.042739</td>
+      <td>0.147628</td>
+      <td>0.013886</td>
+      <td>...</td>
+      <td>0.004688</td>
+      <td>-0.071828</td>
+      <td>-0.017014</td>
+      <td>-0.017609</td>
+      <td>-0.032366</td>
+      <td>-0.047005</td>
+      <td>-0.047005</td>
+      <td>0.018745</td>
+      <td>NaN</td>
+      <td>-0.020979</td>
+    </tr>
+    <tr>
+      <th>Post-secondary researcher</th>
+      <td>-0.037666</td>
+      <td>0.048526</td>
+      <td>0.011106</td>
+      <td>0.009128</td>
+      <td>0.143054</td>
+      <td>-0.145048</td>
+      <td>-0.021498</td>
+      <td>-0.009367</td>
+      <td>0.205475</td>
+      <td>0.020456</td>
+      <td>...</td>
+      <td>-0.033289</td>
+      <td>-0.000875</td>
+      <td>-0.016043</td>
+      <td>0.090608</td>
+      <td>0.029681</td>
+      <td>0.022407</td>
+      <td>0.022407</td>
+      <td>-0.015171</td>
+      <td>NaN</td>
+      <td>-0.010722</td>
+    </tr>
+    <tr>
+      <th>Student</th>
+      <td>0.000558</td>
+      <td>-0.069162</td>
+      <td>0.089462</td>
+      <td>0.032122</td>
+      <td>0.044106</td>
+      <td>-0.334254</td>
+      <td>-0.044998</td>
+      <td>-0.030111</td>
+      <td>-0.087148</td>
+      <td>-0.070048</td>
+      <td>...</td>
+      <td>-0.036258</td>
+      <td>0.058057</td>
+      <td>0.018801</td>
+      <td>0.067201</td>
+      <td>0.093131</td>
+      <td>0.135946</td>
+      <td>0.101401</td>
+      <td>-0.023226</td>
+      <td>NaN</td>
+      <td>-0.016415</td>
+    </tr>
+    <tr>
+      <th>Teacher</th>
+      <td>0.028595</td>
+      <td>0.077502</td>
+      <td>0.189937</td>
+      <td>0.069361</td>
+      <td>-0.007095</td>
+      <td>-0.077604</td>
+      <td>0.022341</td>
+      <td>0.076388</td>
+      <td>0.045060</td>
+      <td>0.020666</td>
+      <td>...</td>
+      <td>0.067147</td>
+      <td>-0.039029</td>
+      <td>0.157796</td>
+      <td>0.019609</td>
+      <td>0.084376</td>
+      <td>-0.014208</td>
+      <td>-0.014208</td>
+      <td>-0.008972</td>
+      <td>NaN</td>
+      <td>-0.006341</td>
+    </tr>
+    <tr>
+      <th>Retired</th>
+      <td>-0.011971</td>
+      <td>-0.015662</td>
+      <td>0.036728</td>
+      <td>-0.016517</td>
+      <td>-0.012823</td>
+      <td>0.009531</td>
+      <td>0.025134</td>
+      <td>0.064991</td>
+      <td>0.034830</td>
+      <td>-0.016850</td>
+      <td>...</td>
+      <td>-0.011294</td>
+      <td>0.085201</td>
+      <td>-0.011749</td>
+      <td>-0.017014</td>
+      <td>-0.017339</td>
+      <td>-0.005000</td>
+      <td>-0.005000</td>
+      <td>-0.003158</td>
+      <td>NaN</td>
+      <td>-0.002232</td>
+    </tr>
+    <tr>
+      <th>Historical Society</th>
+      <td>-0.007560</td>
+      <td>-0.009891</td>
+      <td>-0.012124</td>
+      <td>-0.010431</td>
+      <td>-0.008098</td>
+      <td>-0.031788</td>
+      <td>-0.014512</td>
+      <td>-0.008356</td>
+      <td>0.039967</td>
+      <td>-0.010641</td>
+      <td>...</td>
+      <td>-0.007132</td>
+      <td>-0.012953</td>
+      <td>-0.007420</td>
+      <td>-0.010744</td>
+      <td>-0.010950</td>
+      <td>-0.003158</td>
+      <td>-0.003158</td>
+      <td>-0.001994</td>
+      <td>NaN</td>
+      <td>-0.001409</td>
+    </tr>
+    <tr>
+      <th>Independent Researcher</th>
+      <td>-0.013120</td>
+      <td>0.044010</td>
+      <td>0.030038</td>
+      <td>0.098522</td>
+      <td>-0.014054</td>
+      <td>-0.027829</td>
+      <td>0.106644</td>
+      <td>0.128384</td>
+      <td>0.043371</td>
+      <td>0.153380</td>
+      <td>...</td>
+      <td>-0.012378</td>
+      <td>0.025795</td>
+      <td>0.067007</td>
+      <td>0.038142</td>
+      <td>-0.019003</td>
+      <td>-0.005480</td>
+      <td>-0.005480</td>
+      <td>-0.003461</td>
+      <td>NaN</td>
+      <td>-0.002446</td>
+    </tr>
+    <tr>
+      <th>Scholar</th>
+      <td>-0.005343</td>
+      <td>-0.006990</td>
+      <td>-0.008569</td>
+      <td>-0.007372</td>
+      <td>-0.005723</td>
+      <td>-0.022466</td>
+      <td>0.097113</td>
+      <td>-0.005906</td>
+      <td>0.028247</td>
+      <td>0.132442</td>
+      <td>...</td>
+      <td>-0.005041</td>
+      <td>-0.009155</td>
+      <td>-0.005244</td>
+      <td>-0.007594</td>
+      <td>-0.007739</td>
+      <td>-0.002232</td>
+      <td>-0.002232</td>
+      <td>-0.001409</td>
+      <td>NaN</td>
+      <td>-0.000996</td>
+    </tr>
+    <tr>
+      <th>Editor</th>
+      <td>-0.011971</td>
+      <td>0.252260</td>
+      <td>0.092655</td>
+      <td>0.111174</td>
+      <td>0.148271</td>
+      <td>-0.020403</td>
+      <td>0.073247</td>
+      <td>0.143213</td>
+      <td>0.063288</td>
+      <td>0.045869</td>
+      <td>...</td>
+      <td>0.079509</td>
+      <td>0.032345</td>
+      <td>0.075715</td>
+      <td>0.107342</td>
+      <td>0.043803</td>
+      <td>-0.005000</td>
+      <td>-0.005000</td>
+      <td>-0.003158</td>
+      <td>NaN</td>
+      <td>-0.002232</td>
+    </tr>
+    <tr>
+      <th>Writer</th>
+      <td>-0.014178</td>
+      <td>-0.018550</td>
+      <td>-0.022739</td>
+      <td>-0.019563</td>
+      <td>-0.015188</td>
+      <td>-0.008970</td>
+      <td>-0.027217</td>
+      <td>-0.015672</td>
+      <td>0.074958</td>
+      <td>0.033103</td>
+      <td>...</td>
+      <td>-0.013376</td>
+      <td>0.065139</td>
+      <td>-0.013915</td>
+      <td>0.032451</td>
+      <td>0.031190</td>
+      <td>-0.005922</td>
+      <td>-0.005922</td>
+      <td>-0.003740</td>
+      <td>NaN</td>
+      <td>-0.002643</td>
+    </tr>
+    <tr>
+      <th>Historian</th>
+      <td>0.031465</td>
+      <td>0.054093</td>
+      <td>-0.032271</td>
+      <td>0.048892</td>
+      <td>-0.021555</td>
+      <td>-0.048671</td>
+      <td>-0.009743</td>
+      <td>-0.022241</td>
+      <td>0.089297</td>
+      <td>-0.028323</td>
+      <td>...</td>
+      <td>-0.018984</td>
+      <td>-0.034477</td>
+      <td>-0.019749</td>
+      <td>-0.028599</td>
+      <td>0.044265</td>
+      <td>-0.008405</td>
+      <td>-0.008405</td>
+      <td>-0.005308</td>
+      <td>NaN</td>
+      <td>-0.003751</td>
+    </tr>
+  </tbody>
+</table>
+<p>15 rows × 21 columns</p>
+</div></div></div>
+</div>
+<p>The above correlation matrix displays the linear relationship between occupations and interests from the DataFrame. The values range from -1 to 1. A value of 1 represents a perfect positive correlation (when one variable increases, the other does as well), while a value of -1 signifies a perfect negative correlation (when one variable increases, the other falls). A value of 0 denotes no relationship.</p>
+<p>Notice that several correlations for “Family History” and “Local History” are displayed as “NaN”. This is because these interests don’t have any mentions (occurrences) in the dataset, hence we cannot calculate the correlation coefficient for these interests. This was also highlighted in the bar chart showing the count of different interests.</p>
+<p>Here are some highlights from the correlation matrix:</p>
+<ul class="simple">
+<li><p>Genealogical researchers exhibit a positive correlation with the interest in genealogy (0.633).</p></li>
+<li><p>The interest in history is quite positively correlated with post-secondary researchers (0.205).</p></li>
+<li><p>Legal researchers show a significant association with an interest in law (0.343) and Indigenous Land Claims (0.233).</p></li>
+<li><p>Teachers show a positive association with education (0.190) and Political Science (0.084).</p></li>
+<li><p>GLAM professionals show a positive relation with the interest in Digital Humanities (0.149).</p></li>
+<li><p>Editors demonstrate a positive correlation with the interest in Digital Humanities (0.252).</p></li>
+</ul>
+<p>These correlations give insights into the related occupations and interests.</p>
+<p>You may choose a threshold for correlation coefficients to count a correlation as significant. Correlations that do not meet this threshold are often considered as noise. Keep in mind that correlation does not imply causation: discovering a correlation between variables does not automatically denote that changes in one variable lead to changes in another.</p>
+<blockquote>
+<div><p>Create a heatmap showing the relationship between occupations and interests</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># For visualizing the relationship between occupations and interests, we can create a heatmap using seaborn.</span>
+<span class="c1"># Heatmap will use the correlation matrix that we computed before.</span>
+
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">occupation_interest_correlation</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;.2f&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Correlation between Occupations and Interests&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">12</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># For visualizing the relationship between occupations and interests, we can create a heatmap using seaborn.</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># Heatmap will use the correlation matrix that we computed before.</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">occupation_interest_correlation</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;.2f&#39;</span><span class="p">)</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;seaborn&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>I’ve created a heatmap to visualize the correlation between occupations and interests. The heatmap color varies from -1 (perfect negative correlation, represented in dark navy color) to 1 (perfect positive correlation, represented in dark red color).</p>
+<p>Areas that are dark red represent a strong positive relationship between specific occupations and interests. For example, we can see a strong correlation between legal researchers and an interest in law, as well as a significant correlation between genealogical researchers and genealogy.</p>
+<p>Areas that are navy blue represent a strong negative relationship between an occupation and an interest. For instance, we can see a fairly strong negative correlation between being a student and having interest in genealogy.</p>
+<p>Areas that are light colored (around zero) represent a weak or no relationship between the variables. For instance, the correlation between a scholar and most of the interests are weak.</p>
+<p>Do note that visualizations such as this are excellent exploratory tools but, correlation does not imply causation. Thus, this should be used as a stepping stone for further analysis.</p>
 <a style='text-decoration:none;line-height:16px;display:flex;color:#5B5B62;padding:10px;justify-content:end;' href='https://deepnote.com?utm_source=created-in-deepnote-cell&projectId=78bfc222-b866-4a43-b8a8-c2a8d5467ce5' target="_blank">
 <img alt='Created in deepnote.com' style='display:inline;max-height:16px;margin:0px;margin-right:7.5px;' src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iODBweCIgaGVpZ2h0PSI4MHB4IiB2aWV3Qm94PSIwIDAgODAgODAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU0LjEgKDc2NDkwKSAtIGh0dHBzOi8vc2tldGNoYXBwLmNvbSAtLT4KICAgIDx0aXRsZT5Hcm91cCAzPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IkxhbmRpbmciIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJBcnRib2FyZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEyMzUuMDAwMDAwLCAtNzkuMDAwMDAwKSI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjM1LjAwMDAwMCwgNzkuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iUGF0aC0yMCIgZmlsbD0iIzAyNjVCNCIgcG9pbnRzPSIyLjM3NjIzNzYyIDgwIDM4LjA0NzY2NjcgODAgNTcuODIxNzgyMiA3My44MDU3NTkyIDU3LjgyMTc4MjIgMzIuNzU5MjczOSAzOS4xNDAyMjc4IDMxLjY4MzE2ODMiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0zNS4wMDc3MTgsODAgQzQyLjkwNjIwMDcsNzYuNDU0OTM1OCA0Ny41NjQ5MTY3LDcxLjU0MjI2NzEgNDguOTgzODY2LDY1LjI2MTk5MzkgQzUxLjExMjI4OTksNTUuODQxNTg0MiA0MS42NzcxNzk1LDQ5LjIxMjIyODQgMjUuNjIzOTg0Niw0OS4yMTIyMjg0IEMyNS40ODQ5Mjg5LDQ5LjEyNjg0NDggMjkuODI2MTI5Niw0My4yODM4MjQ4IDM4LjY0NzU4NjksMzEuNjgzMTY4MyBMNzIuODcxMjg3MSwzMi41NTQ0MjUgTDY1LjI4MDk3Myw2Ny42NzYzNDIxIEw1MS4xMTIyODk5LDc3LjM3NjE0NCBMMzUuMDA3NzE4LDgwIFoiIGlkPSJQYXRoLTIyIiBmaWxsPSIjMDAyODY4Ij48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMCwzNy43MzA0NDA1IEwyNy4xMTQ1MzcsMC4yNTcxMTE0MzYgQzYyLjM3MTUxMjMsLTEuOTkwNzE3MDEgODAsMTAuNTAwMzkyNyA4MCwzNy43MzA0NDA1IEM4MCw2NC45NjA0ODgyIDY0Ljc3NjUwMzgsNzkuMDUwMzQxNCAzNC4zMjk1MTEzLDgwIEM0Ny4wNTUzNDg5LDc3LjU2NzA4MDggNTMuNDE4MjY3Nyw3MC4zMTM2MTAzIDUzLjQxODI2NzcsNTguMjM5NTg4NSBDNTMuNDE4MjY3Nyw0MC4xMjg1NTU3IDM2LjMwMzk1NDQsMzcuNzMwNDQwNSAyNS4yMjc0MTcsMzcuNzMwNDQwNSBDMTcuODQzMDU4NiwzNy43MzA0NDA1IDkuNDMzOTE5NjYsMzcuNzMwNDQwNSAwLDM3LjczMDQ0MDUgWiIgaWQ9IlBhdGgtMTkiIGZpbGw9IiMzNzkzRUYiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+' > </img>
 Created in <span style='font-weight:600;margin-left:4px;'>Deepnote</span></a>
