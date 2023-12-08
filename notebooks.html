@@ -388,19 +388,16 @@ document.write(`
 <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Other Identification&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Other Interest&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">radviz</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;geo&quot;</span><span class="p">)</span>
+<span class="n">rslt_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;geo&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Toronto, Canada&#39;</span><span class="p">]</span> 
+<span class="n">radviz</span><span class="p">(</span><span class="n">rslt_df</span><span class="p">,</span> <span class="s2">&quot;geo&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/brittny/.local/lib/python3.10/site-packages/pandas/plotting/_matplotlib/misc.py:178: RuntimeWarning: invalid value encountered in divide
-  y = (s * row_).sum(axis=0) / row.sum()
-</pre></div>
-</div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
 </pre></div>
 </div>
-<img alt="_images/a1c4696b46f268a948cb883cfe4f8237e960c13a9fdc1ea40ef29635cae456d6.png" src="_images/a1c4696b46f268a948cb883cfe4f8237e960c13a9fdc1ea40ef29635cae456d6.png" />
+<img alt="_images/c16dfcca5267675ae6147a64bd0531cafa82f3f86ee78bfeda37cb6894b5dfee.png" src="_images/c16dfcca5267675ae6147a64bd0531cafa82f3f86ee78bfeda37cb6894b5dfee.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -411,7 +408,8 @@ document.write(`
 <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Other Identification&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Other Interest&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">parallel_coordinates</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">&quot;geo&quot;</span><span class="p">)</span>
+<span class="n">rslt_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;geo&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Ottawa, Canada&#39;</span><span class="p">]</span> 
+<span class="n">parallel_coordinates</span><span class="p">(</span><span class="n">rslt_df</span><span class="p">,</span> <span class="s2">&quot;geo&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -419,7 +417,7 @@ document.write(`
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
 </pre></div>
 </div>
-<img alt="_images/23af28c901237cabf0e5b402c60b2097319550e708797fadaca9f1a2349268dc.png" src="_images/23af28c901237cabf0e5b402c60b2097319550e708797fadaca9f1a2349268dc.png" />
+<img alt="_images/6a0cfc1f17042d61137020705c0f6d40c3693f94240dac7a88492bc41b0ff802.png" src="_images/6a0cfc1f17042d61137020705c0f6d40c3693f94240dac7a88492bc41b0ff802.png" />
 </div>
 </div>
 <p>There is a lot more that you can do with outputs (such as including interactive outputs)
