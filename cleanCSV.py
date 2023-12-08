@@ -22,8 +22,11 @@ write_list = []
 
 
 def get_location(ip_address):
-    response = requests.get(f'https://ipapi.co/{ip_address}/json/').json()
-    return [response.get("city"), response.get("region"), response.get("country_name"), response.get("latitude"), response.get("longitude")]
+    #3f84cc6db67539
+    response = requests.get(f'https://ipinfo.io/{ip_address}/json?token=3f84cc6db67539').json()
+    print(response)
+    loc = response.get('loc').split(",")
+    return [response.get("city"), response.get("region"), response.get("country"), loc[0], loc[1]]
 
 def parseRaw():
     # Open file  
