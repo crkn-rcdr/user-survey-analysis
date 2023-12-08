@@ -383,7 +383,6 @@ document.write(`
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Markdown</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;geo_q1.csv&#39;</span><span class="p">)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Total&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)[</span><span class="mi">1</span><span class="p">:]]</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)))</span>
 </pre></div>
 </div>
@@ -401,7 +400,6 @@ document.write(`
       <th>Post-secondary researcher</th>
       <th>Student</th>
       <th>Teacher</th>
-      <th>Total</th>
     </tr>
   </thead>
   <tbody>
@@ -415,7 +413,6 @@ document.write(`
       <td>2</td>
       <td>3</td>
       <td>0</td>
-      <td>40</td>
     </tr>
     <tr>
       <td>Vancouver, Canada</td>
@@ -427,7 +424,6 @@ document.write(`
       <td>3</td>
       <td>1</td>
       <td>1</td>
-      <td>17</td>
     </tr>
     <tr>
       <td>Tucson, United States</td>
@@ -439,7 +435,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>London, Canada</td>
@@ -451,7 +446,6 @@ document.write(`
       <td>6</td>
       <td>5</td>
       <td>1</td>
-      <td>25</td>
     </tr>
     <tr>
       <td>Gardiner, United States</td>
@@ -463,7 +457,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Sacramento, United States</td>
@@ -475,7 +468,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Calgary, Canada</td>
@@ -487,7 +479,6 @@ document.write(`
       <td>5</td>
       <td>11</td>
       <td>2</td>
-      <td>34</td>
     </tr>
     <tr>
       <td>Nepean, Canada</td>
@@ -499,7 +490,6 @@ document.write(`
       <td>1</td>
       <td>1</td>
       <td>1</td>
-      <td>6</td>
     </tr>
     <tr>
       <td>Woodstock, Canada</td>
@@ -511,7 +501,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Halifax, Canada</td>
@@ -523,7 +512,6 @@ document.write(`
       <td>2</td>
       <td>5</td>
       <td>0</td>
-      <td>19</td>
     </tr>
     <tr>
       <td>Victoria, Canada</td>
@@ -535,7 +523,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>6</td>
     </tr>
     <tr>
       <td>Windsor, Canada</td>
@@ -547,7 +534,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>6</td>
     </tr>
     <tr>
       <td>Fredericton, Canada</td>
@@ -559,7 +545,6 @@ document.write(`
       <td>2</td>
       <td>1</td>
       <td>0</td>
-      <td>17</td>
     </tr>
     <tr>
       <td>Québec, Canada</td>
@@ -571,7 +556,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Toronto, Canada</td>
@@ -583,7 +567,6 @@ document.write(`
       <td>18</td>
       <td>25</td>
       <td>3</td>
-      <td>105</td>
     </tr>
     <tr>
       <td>Charlottetown, Canada</td>
@@ -595,7 +578,6 @@ document.write(`
       <td>1</td>
       <td>1</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Liverpool, United Kingdom</td>
@@ -607,7 +589,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Thunder Bay, Canada</td>
@@ -619,7 +600,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>1</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Burlington, Canada</td>
@@ -631,7 +611,6 @@ document.write(`
       <td>1</td>
       <td>2</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Cornwall, Canada</td>
@@ -643,7 +622,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Montreal, Canada</td>
@@ -655,7 +633,6 @@ document.write(`
       <td>8</td>
       <td>9</td>
       <td>2</td>
-      <td>32</td>
     </tr>
     <tr>
       <td>Kingston, Canada</td>
@@ -667,7 +644,6 @@ document.write(`
       <td>1</td>
       <td>2</td>
       <td>0</td>
-      <td>12</td>
     </tr>
     <tr>
       <td>Niagara Falls, Canada</td>
@@ -679,7 +655,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Lima, Peru</td>
@@ -691,7 +666,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Newmarket, Canada</td>
@@ -703,7 +677,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Oakville, Canada</td>
@@ -715,7 +688,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Lachine, Canada</td>
@@ -727,7 +699,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Moncton, Canada</td>
@@ -739,11 +710,9 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>6</td>
     </tr>
     <tr>
       <td>Talkeetna, United States</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -763,7 +732,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Dartmouth, Canada</td>
@@ -775,7 +743,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>9</td>
     </tr>
     <tr>
       <td>Freiburg im Breisgau, Germany</td>
@@ -787,7 +754,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Eastbourne, United Kingdom</td>
@@ -799,7 +765,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Seattle, United States</td>
@@ -811,7 +776,6 @@ document.write(`
       <td>1</td>
       <td>1</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Mission, Canada</td>
@@ -823,7 +787,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Langley, Canada</td>
@@ -835,7 +798,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Seabright, Canada</td>
@@ -847,7 +809,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Creston, Canada</td>
@@ -859,7 +820,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Winnipeg, Canada</td>
@@ -871,7 +831,6 @@ document.write(`
       <td>0</td>
       <td>6</td>
       <td>2</td>
-      <td>19</td>
     </tr>
     <tr>
       <td>Regina, Canada</td>
@@ -883,7 +842,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>8</td>
     </tr>
     <tr>
       <td>Guelph, Canada</td>
@@ -895,7 +853,6 @@ document.write(`
       <td>2</td>
       <td>0</td>
       <td>0</td>
-      <td>10</td>
     </tr>
     <tr>
       <td>Edmonton, Canada</td>
@@ -907,7 +864,6 @@ document.write(`
       <td>1</td>
       <td>3</td>
       <td>0</td>
-      <td>14</td>
     </tr>
     <tr>
       <td>Pittsburgh, United States</td>
@@ -919,11 +875,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Venice, United States</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -943,7 +897,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Albany, United States</td>
@@ -955,7 +908,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Hamilton, Canada</td>
@@ -967,7 +919,6 @@ document.write(`
       <td>0</td>
       <td>2</td>
       <td>0</td>
-      <td>10</td>
     </tr>
     <tr>
       <td>Grand Falls-Windsor, Canada</td>
@@ -979,11 +930,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Buffalo, United States</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -1003,7 +952,6 @@ document.write(`
       <td>3</td>
       <td>2</td>
       <td>1</td>
-      <td>10</td>
     </tr>
     <tr>
       <td>Philadelphia, United States</td>
@@ -1015,7 +963,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Black Mountain, United States</td>
@@ -1027,7 +974,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Lethbridge, Canada</td>
@@ -1039,7 +985,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>La Prairie, Canada</td>
@@ -1051,7 +996,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Dawson City, Canada</td>
@@ -1063,7 +1007,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Saint-Felix-de-Valois, Canada</td>
@@ -1075,7 +1018,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Livorno, Italy</td>
@@ -1086,7 +1028,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
       <td>1</td>
     </tr>
     <tr>
@@ -1099,11 +1040,9 @@ document.write(`
       <td>1</td>
       <td>1</td>
       <td>1</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Blanchard, United States</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -1123,7 +1062,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Puslinch, Canada</td>
@@ -1134,7 +1072,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
       <td>1</td>
     </tr>
     <tr>
@@ -1147,7 +1084,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Brockville, Canada</td>
@@ -1159,7 +1095,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>7</td>
     </tr>
     <tr>
       <td>Rome, Italy</td>
@@ -1171,7 +1106,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>1</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Bathurst, Canada</td>
@@ -1183,7 +1117,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Vanløse, Denmark</td>
@@ -1195,7 +1128,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Glasgow, United Kingdom</td>
@@ -1207,7 +1139,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Surrey, Canada</td>
@@ -1219,7 +1150,6 @@ document.write(`
       <td>1</td>
       <td>4</td>
       <td>0</td>
-      <td>7</td>
     </tr>
     <tr>
       <td>Winston-Salem, United States</td>
@@ -1231,7 +1161,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Welland, Canada</td>
@@ -1243,7 +1172,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Coquitlam, Canada</td>
@@ -1255,7 +1183,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Cambridge, Canada</td>
@@ -1267,7 +1194,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>9</td>
     </tr>
     <tr>
       <td>Oakland, United States</td>
@@ -1279,7 +1205,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Squamish, Canada</td>
@@ -1291,7 +1216,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Campbellford, Canada</td>
@@ -1303,7 +1227,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Eufaula, United States</td>
@@ -1315,7 +1238,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Riverton, United States</td>
@@ -1327,7 +1249,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Richibucto, Canada</td>
@@ -1339,11 +1260,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Orléans, Canada</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -1363,7 +1282,6 @@ document.write(`
       <td>3</td>
       <td>6</td>
       <td>2</td>
-      <td>14</td>
     </tr>
     <tr>
       <td>Sydney, Canada</td>
@@ -1375,7 +1293,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Sebring, United States</td>
@@ -1387,7 +1304,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Whitby, Canada</td>
@@ -1398,7 +1314,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
       <td>1</td>
     </tr>
     <tr>
@@ -1411,11 +1326,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Miami, United States</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -1435,7 +1348,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Truro, Canada</td>
@@ -1447,7 +1359,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>London, United Kingdom</td>
@@ -1459,7 +1370,6 @@ document.write(`
       <td>0</td>
       <td>2</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Kansas City, United States</td>
@@ -1471,7 +1381,6 @@ document.write(`
       <td>0</td>
       <td>2</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Delta, Canada</td>
@@ -1483,7 +1392,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Gloucester, Canada</td>
@@ -1495,7 +1403,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Salem, United States</td>
@@ -1507,7 +1414,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Ellensburg, United States</td>
@@ -1519,7 +1425,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Prince George, Canada</td>
@@ -1531,7 +1436,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Crystal Beach, Canada</td>
@@ -1542,7 +1446,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
       <td>1</td>
     </tr>
     <tr>
@@ -1555,7 +1458,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Denver, United States</td>
@@ -1567,7 +1469,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Ashford, United Kingdom</td>
@@ -1579,7 +1480,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Rock Springs, United States</td>
@@ -1591,7 +1491,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>North Bay, Canada</td>
@@ -1603,7 +1502,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>1</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Nanaimo, Canada</td>
@@ -1615,7 +1513,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Bradford, Canada</td>
@@ -1627,7 +1524,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Traverse City, United States</td>
@@ -1639,7 +1535,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Grand Blanc, United States</td>
@@ -1651,7 +1546,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Camrose, Canada</td>
@@ -1663,7 +1557,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Ajax, Canada</td>
@@ -1675,7 +1568,6 @@ document.write(`
       <td>1</td>
       <td>1</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Kitchener, Canada</td>
@@ -1687,7 +1579,6 @@ document.write(`
       <td>1</td>
       <td>2</td>
       <td>0</td>
-      <td>8</td>
     </tr>
     <tr>
       <td>Sarnia, Canada</td>
@@ -1699,7 +1590,6 @@ document.write(`
       <td>2</td>
       <td>0</td>
       <td>0</td>
-      <td>7</td>
     </tr>
     <tr>
       <td>Saskatoon, Canada</td>
@@ -1711,7 +1601,6 @@ document.write(`
       <td>2</td>
       <td>2</td>
       <td>1</td>
-      <td>11</td>
     </tr>
     <tr>
       <td>St. John's, Canada</td>
@@ -1723,7 +1612,6 @@ document.write(`
       <td>2</td>
       <td>4</td>
       <td>1</td>
-      <td>11</td>
     </tr>
     <tr>
       <td>Oromocto, Canada</td>
@@ -1735,7 +1623,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Richmond, Canada</td>
@@ -1747,7 +1634,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Austin, United States</td>
@@ -1759,7 +1645,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Eastern Passage, Canada</td>
@@ -1771,7 +1656,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Copenhagen, Denmark</td>
@@ -1783,7 +1667,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Clarks Summit, United States</td>
@@ -1795,7 +1678,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Melbourne, Australia</td>
@@ -1807,7 +1689,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>NaN</td>
@@ -1819,7 +1700,6 @@ document.write(`
       <td>9</td>
       <td>50</td>
       <td>6</td>
-      <td>186</td>
     </tr>
     <tr>
       <td>Hamtramck, United States</td>
@@ -1831,7 +1711,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Watsonville, United States</td>
@@ -1843,7 +1722,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Napanee, Canada</td>
@@ -1855,7 +1733,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Portland, United States</td>
@@ -1867,7 +1744,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Oxford, United Kingdom</td>
@@ -1879,7 +1755,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Canyon Country, United States</td>
@@ -1891,7 +1766,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Grimsby, Canada</td>
@@ -1903,7 +1777,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Lincoln, United States</td>
@@ -1915,7 +1788,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Corner Brook, Canada</td>
@@ -1927,7 +1799,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Niles, United States</td>
@@ -1939,7 +1810,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Sackville, Canada</td>
@@ -1951,7 +1821,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Acton, United States</td>
@@ -1963,7 +1832,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Barrie, Canada</td>
@@ -1975,7 +1843,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Duncan, Canada</td>
@@ -1987,7 +1854,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Norwich, United Kingdom</td>
@@ -1999,7 +1865,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Etobicoke, Canada</td>
@@ -2011,11 +1876,9 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Zwolle, The Netherlands</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -2035,7 +1898,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Poplar, United Kingdom</td>
@@ -2047,7 +1909,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Beaverton, United States</td>
@@ -2059,7 +1920,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Kent, United States</td>
@@ -2071,7 +1931,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Drumheller, Canada</td>
@@ -2083,7 +1942,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Palm Springs, United States</td>
@@ -2095,7 +1953,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Williams Lake, Canada</td>
@@ -2107,7 +1964,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Scarborough, Canada</td>
@@ -2119,7 +1975,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>1</td>
-      <td>8</td>
     </tr>
     <tr>
       <td>Red Deer, Canada</td>
@@ -2131,7 +1986,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Weehawken, United States</td>
@@ -2143,7 +1997,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Port Saint Lucie, United States</td>
@@ -2155,7 +2008,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Greater Sudbury, Canada</td>
@@ -2167,7 +2019,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Stayner, Canada</td>
@@ -2179,7 +2030,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Temiscaming, Canada</td>
@@ -2191,7 +2041,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Leeds, United Kingdom</td>
@@ -2203,7 +2052,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>St. Albert, Canada</td>
@@ -2215,7 +2063,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Campbell River, Canada</td>
@@ -2227,7 +2074,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Quispamsis, Canada</td>
@@ -2239,7 +2085,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Howell, United States</td>
@@ -2251,7 +2096,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Digby, Canada</td>
@@ -2263,7 +2107,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Attleboro, United States</td>
@@ -2275,7 +2118,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Loretto, Canada</td>
@@ -2287,7 +2129,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Dundas, Canada</td>
@@ -2299,7 +2140,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Ossining, United States</td>
@@ -2311,7 +2151,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Merritt, Canada</td>
@@ -2323,7 +2162,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>1</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Cassopolis, United States</td>
@@ -2335,7 +2173,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Fall River, Canada</td>
@@ -2347,7 +2184,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Stoney Creek, Canada</td>
@@ -2359,7 +2195,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Chatham, Canada</td>
@@ -2371,7 +2206,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Oshawa, Canada</td>
@@ -2383,7 +2217,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Sturgeon Falls, Canada</td>
@@ -2395,7 +2228,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Brandon, Canada</td>
@@ -2407,7 +2239,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Collingwood, Canada</td>
@@ -2419,7 +2250,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Woodbridge, Canada</td>
@@ -2431,7 +2261,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Airdrie, Canada</td>
@@ -2443,7 +2272,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Fenelon Falls, Canada</td>
@@ -2455,7 +2283,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Pensacola, United States</td>
@@ -2467,7 +2294,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Penticton, Canada</td>
@@ -2479,7 +2305,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Summerland, Canada</td>
@@ -2491,7 +2316,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>West Paris, United States</td>
@@ -2503,7 +2327,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Walkerton, Canada</td>
@@ -2515,7 +2338,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Kamloops, Canada</td>
@@ -2527,7 +2349,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Mitchell/Ontario, Canada</td>
@@ -2539,7 +2360,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Hoffman, United States</td>
@@ -2550,7 +2370,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
       <td>1</td>
     </tr>
     <tr>
@@ -2563,7 +2382,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Milverton, Canada</td>
@@ -2575,11 +2393,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Paddle Prairie, Canada</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -2599,7 +2415,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Gatineau, Canada</td>
@@ -2611,7 +2426,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Waterloo, Canada</td>
@@ -2623,7 +2437,6 @@ document.write(`
       <td>1</td>
       <td>4</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Verdun, Canada</td>
@@ -2635,7 +2448,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Ellicott City, United States</td>
@@ -2647,7 +2459,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Mississauga, Canada</td>
@@ -2659,7 +2470,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Seixal, Portugal</td>
@@ -2671,11 +2481,9 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Picton, Canada</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -2695,7 +2503,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>North Vancouver, Canada</td>
@@ -2707,7 +2514,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Warkworth, Canada</td>
@@ -2719,7 +2525,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Beaconsfield, Canada</td>
@@ -2731,7 +2536,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Listowel, Canada</td>
@@ -2743,7 +2547,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Bobcaygeon, Canada</td>
@@ -2755,7 +2558,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Caledon, Canada</td>
@@ -2767,7 +2569,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Mutxamel, Spain</td>
@@ -2779,7 +2580,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Cochrane, Canada</td>
@@ -2791,7 +2591,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Augusta, United States</td>
@@ -2803,7 +2602,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Perth, United Kingdom</td>
@@ -2815,7 +2613,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Amsterdam, United States</td>
@@ -2827,7 +2624,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Brant, Canada</td>
@@ -2839,7 +2635,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Pickering, Canada</td>
@@ -2851,7 +2646,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Cortland, United States</td>
@@ -2863,7 +2657,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Stratford, Canada</td>
@@ -2875,7 +2668,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Amherst, Canada</td>
@@ -2887,7 +2679,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Bradenton, United States</td>
@@ -2899,7 +2690,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Columbus, United States</td>
@@ -2911,7 +2701,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Bedford, Canada</td>
@@ -2923,7 +2712,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Washington, United States</td>
@@ -2935,11 +2723,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Abbotsford, Canada</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -2959,7 +2745,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Lincoln Park, United States</td>
@@ -2971,7 +2756,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Puerto Vallarta, Mexico</td>
@@ -2983,7 +2767,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Pierceland, Canada</td>
@@ -2995,7 +2778,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Brighton, Canada</td>
@@ -3007,7 +2789,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Clinton, United States</td>
@@ -3019,7 +2800,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Laval, Canada</td>
@@ -3031,7 +2811,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Big Beach, Canada</td>
@@ -3043,11 +2822,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Saint-Lambert, Canada</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -3067,7 +2844,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Vernon River, Canada</td>
@@ -3079,7 +2855,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Cambridge, United States</td>
@@ -3091,7 +2866,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Bracebridge, Canada</td>
@@ -3103,7 +2877,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Sherbrooke, Canada</td>
@@ -3115,7 +2888,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Lower Sackville, Canada</td>
@@ -3127,7 +2899,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Providence, United States</td>
@@ -3139,7 +2910,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Millbrook, Canada</td>
@@ -3151,7 +2921,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Carleton Place, Canada</td>
@@ -3163,11 +2932,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Novalja, Croatia</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -3187,7 +2954,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Hammonds Plains, Canada</td>
@@ -3199,7 +2965,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>New York, United States</td>
@@ -3211,11 +2976,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Massey, Canada</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -3235,7 +2998,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Ashburn, United States</td>
@@ -3247,7 +3009,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Rock Hill, United States</td>
@@ -3259,7 +3020,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Summerside, Canada</td>
@@ -3271,7 +3031,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Stockholm, Sweden</td>
@@ -3283,7 +3042,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Rishon LeTsiyyon, Israel</td>
@@ -3295,7 +3053,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Marblehead, United States</td>
@@ -3307,7 +3064,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Sidney, Canada</td>
@@ -3319,7 +3075,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Boulder, United States</td>
@@ -3331,7 +3086,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Antigonish, Canada</td>
@@ -3343,7 +3097,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Elliot Lake, Canada</td>
@@ -3355,7 +3108,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Smithers, Canada</td>
@@ -3367,7 +3119,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Wainfleet, Canada</td>
@@ -3379,7 +3130,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Paradise, Canada</td>
@@ -3390,7 +3140,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
       <td>1</td>
     </tr>
     <tr>
@@ -3403,7 +3152,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Ljubljana, Slovenia</td>
@@ -3415,7 +3163,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Brooklyn, United States</td>
@@ -3427,7 +3174,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>North York, Canada</td>
@@ -3439,7 +3185,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Lansdale, United States</td>
@@ -3451,7 +3196,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Keene, United States</td>
@@ -3463,7 +3207,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Coimbatore, India</td>
@@ -3475,7 +3218,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>St Helens, United Kingdom</td>
@@ -3487,7 +3229,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Castro Valley, United States</td>
@@ -3499,7 +3240,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Omaha, United States</td>
@@ -3511,7 +3251,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>1</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Prince Albert, Canada</td>
@@ -3523,7 +3262,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Lakewood, United States</td>
@@ -3535,7 +3273,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Harvey Station, Canada</td>
@@ -3547,7 +3284,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Compton, Canada</td>
@@ -3559,7 +3295,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Cawston, Canada</td>
@@ -3571,7 +3306,6 @@ document.write(`
       <td>2</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Torbay, Canada</td>
@@ -3583,7 +3317,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Stevensville, Canada</td>
@@ -3595,7 +3328,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Thorold, Canada</td>
@@ -3607,7 +3339,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Charlottesville, United States</td>
@@ -3619,7 +3350,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Edinburgh, United Kingdom</td>
@@ -3631,7 +3361,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Brossard, Canada</td>
@@ -3643,7 +3372,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>1</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Hillsborough, United States</td>
@@ -3655,11 +3383,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Braunschweig, Germany</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -3679,7 +3405,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Colorado Springs, United States</td>
@@ -3691,7 +3416,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Richmond Hill, Canada</td>
@@ -3703,7 +3427,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Strathroy, Canada</td>
@@ -3715,7 +3438,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Saint-Jean-sur-Richelieu, Canada</td>
@@ -3727,7 +3449,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Vankleek Hill, Canada</td>
@@ -3739,7 +3460,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Nashville, United States</td>
@@ -3751,7 +3471,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Banff, Canada</td>
@@ -3763,7 +3482,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Lynnfield, United States</td>
@@ -3775,11 +3493,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Niagara-on-the-Lake, Canada</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -3799,7 +3515,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Mortsel, Belgium</td>
@@ -3811,7 +3526,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>St. Marys, Canada</td>
@@ -3823,7 +3537,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Cheticamp, Canada</td>
@@ -3835,7 +3548,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Avon, United States</td>
@@ -3847,11 +3559,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Nice, France</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -3871,7 +3581,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>1</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Valleyview, Canada</td>
@@ -3883,7 +3592,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Kentville, Canada</td>
@@ -3895,7 +3603,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Indianapolis, United States</td>
@@ -3907,7 +3614,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Dallas, United States</td>
@@ -3919,7 +3625,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Vernon, Canada</td>
@@ -3931,7 +3636,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Grande Cache, Canada</td>
@@ -3943,7 +3647,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Wasaga Beach, Canada</td>
@@ -3955,7 +3658,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Barraute, Canada</td>
@@ -3967,7 +3669,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Dorval, Canada</td>
@@ -3979,7 +3680,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Stittsville, Canada</td>
@@ -3991,7 +3691,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Orillia, Canada</td>
@@ -4003,7 +3702,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Los Angeles, United States</td>
@@ -4015,7 +3713,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Freedom, United States</td>
@@ -4027,7 +3724,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Conception Bay South, Canada</td>
@@ -4039,7 +3735,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Dieppe, Canada</td>
@@ -4051,7 +3746,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Mestre, Italy</td>
@@ -4062,7 +3756,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
       <td>1</td>
     </tr>
     <tr>
@@ -4075,7 +3768,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Puigcerdà, Spain</td>
@@ -4087,11 +3779,9 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Berlin, Germany</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -4111,7 +3801,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Burnaby, Canada</td>
@@ -4123,7 +3812,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Chicago, United States</td>
@@ -4135,7 +3823,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Kelowna, Canada</td>
@@ -4147,7 +3834,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Redlands, United States</td>
@@ -4159,7 +3845,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Athol, United States</td>
@@ -4171,7 +3856,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Sydney, Australia</td>
@@ -4183,7 +3867,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Bath, United Kingdom</td>
@@ -4195,7 +3878,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Parksville, Canada</td>
@@ -4207,7 +3889,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Moser River, Canada</td>
@@ -4219,7 +3900,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Milan, Italy</td>
@@ -4231,7 +3911,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -4242,7 +3921,6 @@ document.write(`
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Markdown</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;geo_q2.csv&#39;</span><span class="p">)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Total&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)[</span><span class="mi">1</span><span class="p">:]]</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)))</span>
 </pre></div>
 </div>
@@ -4268,7 +3946,6 @@ document.write(`
       <th>Linguistics</th>
       <th>Literature</th>
       <th>Political Science</th>
-      <th>Total</th>
     </tr>
   </thead>
   <tbody>
@@ -4290,7 +3967,6 @@ document.write(`
       <td>1</td>
       <td>4</td>
       <td>0</td>
-      <td>73</td>
     </tr>
     <tr>
       <td>Vancouver, Canada</td>
@@ -4310,7 +3986,6 @@ document.write(`
       <td>0</td>
       <td>2</td>
       <td>2</td>
-      <td>44</td>
     </tr>
     <tr>
       <td>Tucson, United States</td>
@@ -4330,7 +4005,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>London, Canada</td>
@@ -4350,7 +4024,6 @@ document.write(`
       <td>0</td>
       <td>3</td>
       <td>3</td>
-      <td>36</td>
     </tr>
     <tr>
       <td>Gardiner, United States</td>
@@ -4370,7 +4043,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Sacramento, United States</td>
@@ -4390,7 +4062,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Calgary, Canada</td>
@@ -4410,7 +4081,6 @@ document.write(`
       <td>2</td>
       <td>3</td>
       <td>3</td>
-      <td>58</td>
     </tr>
     <tr>
       <td>Nepean, Canada</td>
@@ -4430,7 +4100,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>1</td>
-      <td>10</td>
     </tr>
     <tr>
       <td>Woodstock, Canada</td>
@@ -4450,7 +4119,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Halifax, Canada</td>
@@ -4470,7 +4138,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>3</td>
-      <td>37</td>
     </tr>
     <tr>
       <td>Victoria, Canada</td>
@@ -4490,7 +4157,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>2</td>
-      <td>13</td>
     </tr>
     <tr>
       <td>Windsor, Canada</td>
@@ -4510,7 +4176,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>8</td>
     </tr>
     <tr>
       <td>Fredericton, Canada</td>
@@ -4530,7 +4195,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>22</td>
     </tr>
     <tr>
       <td>Québec, Canada</td>
@@ -4550,7 +4214,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Toronto, Canada</td>
@@ -4570,7 +4233,6 @@ document.write(`
       <td>1</td>
       <td>4</td>
       <td>6</td>
-      <td>144</td>
     </tr>
     <tr>
       <td>Charlottetown, Canada</td>
@@ -4590,7 +4252,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Liverpool, United Kingdom</td>
@@ -4610,7 +4271,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Thunder Bay, Canada</td>
@@ -4630,7 +4290,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>6</td>
     </tr>
     <tr>
       <td>Burlington, Canada</td>
@@ -4650,7 +4309,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>13</td>
     </tr>
     <tr>
       <td>Cornwall, Canada</td>
@@ -4670,7 +4328,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Montreal, Canada</td>
@@ -4690,7 +4347,6 @@ document.write(`
       <td>1</td>
       <td>2</td>
       <td>3</td>
-      <td>50</td>
     </tr>
     <tr>
       <td>Kingston, Canada</td>
@@ -4710,7 +4366,6 @@ document.write(`
       <td>1</td>
       <td>1</td>
       <td>1</td>
-      <td>19</td>
     </tr>
     <tr>
       <td>Niagara Falls, Canada</td>
@@ -4730,11 +4385,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Lima, Peru</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -4770,7 +4423,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Oakville, Canada</td>
@@ -4790,7 +4442,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Lachine, Canada</td>
@@ -4810,7 +4461,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Moncton, Canada</td>
@@ -4830,7 +4480,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>7</td>
     </tr>
     <tr>
       <td>Talkeetna, United States</td>
@@ -4850,7 +4499,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Giza, Egypt</td>
@@ -4870,7 +4518,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Dartmouth, Canada</td>
@@ -4890,7 +4537,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>10</td>
     </tr>
     <tr>
       <td>Freiburg im Breisgau, Germany</td>
@@ -4910,7 +4556,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Eastbourne, United Kingdom</td>
@@ -4930,7 +4575,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Seattle, United States</td>
@@ -4950,7 +4594,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>8</td>
     </tr>
     <tr>
       <td>Mission, Canada</td>
@@ -4970,7 +4613,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Langley, Canada</td>
@@ -4990,7 +4632,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>12</td>
     </tr>
     <tr>
       <td>Seabright, Canada</td>
@@ -5010,7 +4651,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Creston, Canada</td>
@@ -5030,7 +4670,6 @@ document.write(`
       <td>1</td>
       <td>1</td>
       <td>1</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Winnipeg, Canada</td>
@@ -5050,7 +4689,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>18</td>
     </tr>
     <tr>
       <td>Regina, Canada</td>
@@ -5070,7 +4708,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>16</td>
     </tr>
     <tr>
       <td>Guelph, Canada</td>
@@ -5090,7 +4727,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>16</td>
     </tr>
     <tr>
       <td>Edmonton, Canada</td>
@@ -5110,7 +4746,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>1</td>
-      <td>22</td>
     </tr>
     <tr>
       <td>Pittsburgh, United States</td>
@@ -5130,7 +4765,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Venice, United States</td>
@@ -5150,7 +4784,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Brampton, Canada</td>
@@ -5170,7 +4803,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>1</td>
-      <td>15</td>
     </tr>
     <tr>
       <td>Albany, United States</td>
@@ -5190,7 +4822,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Hamilton, Canada</td>
@@ -5210,7 +4841,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>1</td>
-      <td>14</td>
     </tr>
     <tr>
       <td>Grand Falls-Windsor, Canada</td>
@@ -5230,11 +4860,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Buffalo, United States</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -5270,7 +4898,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>9</td>
     </tr>
     <tr>
       <td>Philadelphia, United States</td>
@@ -5290,7 +4917,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Black Mountain, United States</td>
@@ -5310,7 +4936,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Lethbridge, Canada</td>
@@ -5330,7 +4955,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>La Prairie, Canada</td>
@@ -5349,7 +4973,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
       <td>1</td>
     </tr>
     <tr>
@@ -5370,7 +4993,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Saint-Felix-de-Valois, Canada</td>
@@ -5390,7 +5012,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Livorno, Italy</td>
@@ -5410,7 +5031,6 @@ document.write(`
       <td>1</td>
       <td>1</td>
       <td>1</td>
-      <td>8</td>
     </tr>
     <tr>
       <td>Longueuil, Canada</td>
@@ -5430,7 +5050,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>8</td>
     </tr>
     <tr>
       <td>Blanchard, United States</td>
@@ -5450,7 +5069,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>9</td>
     </tr>
     <tr>
       <td>Hawkesbury, Canada</td>
@@ -5470,7 +5088,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Puslinch, Canada</td>
@@ -5490,7 +5107,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Hinchinbrooke, Canada</td>
@@ -5510,7 +5126,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Brockville, Canada</td>
@@ -5530,7 +5145,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>2</td>
-      <td>11</td>
     </tr>
     <tr>
       <td>Rome, Italy</td>
@@ -5550,7 +5164,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>1</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Bathurst, Canada</td>
@@ -5570,7 +5183,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Vanløse, Denmark</td>
@@ -5590,7 +5202,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Glasgow, United Kingdom</td>
@@ -5610,7 +5221,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Surrey, Canada</td>
@@ -5630,11 +5240,9 @@ document.write(`
       <td>1</td>
       <td>1</td>
       <td>2</td>
-      <td>25</td>
     </tr>
     <tr>
       <td>Winston-Salem, United States</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -5670,7 +5278,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Coquitlam, Canada</td>
@@ -5690,7 +5297,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Cambridge, Canada</td>
@@ -5710,7 +5316,6 @@ document.write(`
       <td>0</td>
       <td>2</td>
       <td>0</td>
-      <td>11</td>
     </tr>
     <tr>
       <td>Oakland, United States</td>
@@ -5730,7 +5335,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Squamish, Canada</td>
@@ -5750,11 +5354,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Campbellford, Canada</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -5790,11 +5392,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Riverton, United States</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -5830,7 +5430,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Orléans, Canada</td>
@@ -5850,7 +5449,6 @@ document.write(`
       <td>1</td>
       <td>1</td>
       <td>1</td>
-      <td>19</td>
     </tr>
     <tr>
       <td>Peterborough, Canada</td>
@@ -5870,7 +5468,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>1</td>
-      <td>15</td>
     </tr>
     <tr>
       <td>Sydney, Canada</td>
@@ -5890,7 +5487,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Sebring, United States</td>
@@ -5910,7 +5506,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Whitby, Canada</td>
@@ -5930,7 +5525,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Courtenay, Canada</td>
@@ -5950,7 +5544,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Miami, United States</td>
@@ -5970,11 +5563,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Pointe-Claire, Canada</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -6010,11 +5601,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>London, United Kingdom</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -6050,7 +5639,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Delta, Canada</td>
@@ -6070,7 +5658,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Gloucester, Canada</td>
@@ -6090,7 +5677,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Salem, United States</td>
@@ -6110,7 +5696,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Ellensburg, United States</td>
@@ -6130,7 +5715,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Prince George, Canada</td>
@@ -6150,7 +5734,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Crystal Beach, Canada</td>
@@ -6170,7 +5753,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Simcoe, Canada</td>
@@ -6190,7 +5772,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Denver, United States</td>
@@ -6210,7 +5791,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Ashford, United Kingdom</td>
@@ -6230,7 +5810,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Rock Springs, United States</td>
@@ -6250,7 +5829,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>North Bay, Canada</td>
@@ -6270,7 +5848,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Nanaimo, Canada</td>
@@ -6290,7 +5867,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>10</td>
     </tr>
     <tr>
       <td>Bradford, Canada</td>
@@ -6310,7 +5886,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Traverse City, United States</td>
@@ -6330,7 +5905,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Grand Blanc, United States</td>
@@ -6350,7 +5924,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Camrose, Canada</td>
@@ -6370,7 +5943,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Ajax, Canada</td>
@@ -6390,7 +5962,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Kitchener, Canada</td>
@@ -6410,7 +5981,6 @@ document.write(`
       <td>1</td>
       <td>1</td>
       <td>0</td>
-      <td>15</td>
     </tr>
     <tr>
       <td>Sarnia, Canada</td>
@@ -6430,7 +6000,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>10</td>
     </tr>
     <tr>
       <td>Saskatoon, Canada</td>
@@ -6450,7 +6019,6 @@ document.write(`
       <td>2</td>
       <td>1</td>
       <td>1</td>
-      <td>23</td>
     </tr>
     <tr>
       <td>St. John's, Canada</td>
@@ -6470,7 +6038,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>1</td>
-      <td>13</td>
     </tr>
     <tr>
       <td>Oromocto, Canada</td>
@@ -6490,7 +6057,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Richmond, Canada</td>
@@ -6510,7 +6076,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>7</td>
     </tr>
     <tr>
       <td>Austin, United States</td>
@@ -6530,7 +6095,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Eastern Passage, Canada</td>
@@ -6550,7 +6114,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Copenhagen, Denmark</td>
@@ -6570,7 +6133,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Clarks Summit, United States</td>
@@ -6590,7 +6152,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Melbourne, Australia</td>
@@ -6610,7 +6171,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>NaN</td>
@@ -6630,7 +6190,6 @@ document.write(`
       <td>4</td>
       <td>8</td>
       <td>11</td>
-      <td>266</td>
     </tr>
     <tr>
       <td>Hamtramck, United States</td>
@@ -6650,7 +6209,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Watsonville, United States</td>
@@ -6670,7 +6228,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Napanee, Canada</td>
@@ -6690,7 +6247,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Portland, United States</td>
@@ -6710,7 +6266,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Oxford, United Kingdom</td>
@@ -6730,7 +6285,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Canyon Country, United States</td>
@@ -6750,7 +6304,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Grimsby, Canada</td>
@@ -6770,7 +6323,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>6</td>
     </tr>
     <tr>
       <td>Lincoln, United States</td>
@@ -6790,7 +6342,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Corner Brook, Canada</td>
@@ -6810,7 +6361,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Niles, United States</td>
@@ -6830,7 +6380,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Sackville, Canada</td>
@@ -6850,7 +6399,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Acton, United States</td>
@@ -6870,7 +6418,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Barrie, Canada</td>
@@ -6890,11 +6437,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Duncan, Canada</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -6930,7 +6475,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
     </tr>
     <tr>
       <td>Etobicoke, Canada</td>
@@ -6950,7 +6494,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Zwolle, The Netherlands</td>
@@ -6970,7 +6513,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>New Minas, Canada</td>
@@ -6990,7 +6532,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Poplar, United Kingdom</td>
@@ -7010,7 +6551,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Beaverton, United States</td>
@@ -7030,11 +6570,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Kent, United States</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -7070,7 +6608,6 @@ document.write(`
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>6</td>
     </tr>
     <tr>
       <td>Palm Springs, United States</td>
@@ -7090,7 +6627,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Williams Lake, Canada</td>
@@ -7110,7 +6646,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Scarborough, Canada</td>
@@ -7130,7 +6665,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>10</td>
     </tr>
     <tr>
       <td>Red Deer, Canada</td>
@@ -7150,7 +6684,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Weehawken, United States</td>
@@ -7170,7 +6703,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Port Saint Lucie, United States</td>
@@ -7190,7 +6722,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Greater Sudbury, Canada</td>
@@ -7210,7 +6741,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Stayner, Canada</td>
@@ -7230,7 +6760,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>1</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Temiscaming, Canada</td>
@@ -7250,11 +6779,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Leeds, United Kingdom</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -7290,7 +6817,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Campbell River, Canada</td>
@@ -7310,7 +6836,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Quispamsis, Canada</td>
@@ -7330,7 +6855,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Howell, United States</td>
@@ -7350,7 +6874,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Digby, Canada</td>
@@ -7370,7 +6893,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Attleboro, United States</td>
@@ -7390,7 +6912,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Loretto, Canada</td>
@@ -7410,7 +6931,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Dundas, Canada</td>
@@ -7430,7 +6950,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Ossining, United States</td>
@@ -7450,7 +6969,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Merritt, Canada</td>
@@ -7470,7 +6988,6 @@ document.write(`
       <td>1</td>
       <td>1</td>
       <td>1</td>
-      <td>13</td>
     </tr>
     <tr>
       <td>Cassopolis, United States</td>
@@ -7490,7 +7007,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Fall River, Canada</td>
@@ -7510,7 +7026,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Stoney Creek, Canada</td>
@@ -7530,7 +7045,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Chatham, Canada</td>
@@ -7550,7 +7064,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Oshawa, Canada</td>
@@ -7570,7 +7083,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Sturgeon Falls, Canada</td>
@@ -7590,7 +7102,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Brandon, Canada</td>
@@ -7610,7 +7121,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>6</td>
     </tr>
     <tr>
       <td>Collingwood, Canada</td>
@@ -7630,7 +7140,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Woodbridge, Canada</td>
@@ -7650,7 +7159,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Airdrie, Canada</td>
@@ -7670,7 +7178,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Fenelon Falls, Canada</td>
@@ -7690,7 +7197,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Pensacola, United States</td>
@@ -7710,7 +7216,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Penticton, Canada</td>
@@ -7730,7 +7235,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Summerland, Canada</td>
@@ -7750,7 +7254,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>West Paris, United States</td>
@@ -7770,7 +7273,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Walkerton, Canada</td>
@@ -7790,7 +7292,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Kamloops, Canada</td>
@@ -7810,7 +7311,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Mitchell/Ontario, Canada</td>
@@ -7830,7 +7330,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Hoffman, United States</td>
@@ -7850,7 +7349,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Saint John, Canada</td>
@@ -7870,7 +7368,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Milverton, Canada</td>
@@ -7890,7 +7387,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Paddle Prairie, Canada</td>
@@ -7910,7 +7406,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>St. Stephen, Canada</td>
@@ -7930,7 +7425,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Gatineau, Canada</td>
@@ -7950,7 +7444,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Waterloo, Canada</td>
@@ -7970,7 +7463,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Verdun, Canada</td>
@@ -7990,7 +7482,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Ellicott City, United States</td>
@@ -8010,7 +7501,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Mississauga, Canada</td>
@@ -8030,7 +7520,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Seixal, Portugal</td>
@@ -8050,7 +7539,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Picton, Canada</td>
@@ -8070,7 +7558,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Middle Sackville, Canada</td>
@@ -8090,7 +7577,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>North Vancouver, Canada</td>
@@ -8110,7 +7596,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Warkworth, Canada</td>
@@ -8130,7 +7615,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Beaconsfield, Canada</td>
@@ -8150,7 +7634,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Listowel, Canada</td>
@@ -8170,7 +7653,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Bobcaygeon, Canada</td>
@@ -8190,7 +7672,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Caledon, Canada</td>
@@ -8210,11 +7691,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Mutxamel, Spain</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -8250,7 +7729,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Augusta, United States</td>
@@ -8270,7 +7748,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Perth, United Kingdom</td>
@@ -8290,7 +7767,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Amsterdam, United States</td>
@@ -8310,7 +7786,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Brant, Canada</td>
@@ -8330,7 +7805,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Pickering, Canada</td>
@@ -8350,7 +7824,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Cortland, United States</td>
@@ -8370,7 +7843,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Stratford, Canada</td>
@@ -8390,7 +7862,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Amherst, Canada</td>
@@ -8410,7 +7881,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>6</td>
     </tr>
     <tr>
       <td>Bradenton, United States</td>
@@ -8430,7 +7900,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Columbus, United States</td>
@@ -8450,7 +7919,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Bedford, Canada</td>
@@ -8470,7 +7938,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Washington, United States</td>
@@ -8490,7 +7957,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Abbotsford, Canada</td>
@@ -8510,7 +7976,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Bethlehem, United States</td>
@@ -8530,7 +7995,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Lincoln Park, United States</td>
@@ -8550,7 +8014,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Puerto Vallarta, Mexico</td>
@@ -8570,7 +8033,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Pierceland, Canada</td>
@@ -8590,7 +8052,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Brighton, Canada</td>
@@ -8610,7 +8071,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Clinton, United States</td>
@@ -8630,7 +8090,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Laval, Canada</td>
@@ -8650,7 +8109,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Big Beach, Canada</td>
@@ -8670,11 +8128,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Saint-Lambert, Canada</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -8710,7 +8166,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Vernon River, Canada</td>
@@ -8730,7 +8185,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Cambridge, United States</td>
@@ -8750,7 +8204,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Bracebridge, Canada</td>
@@ -8770,7 +8223,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Sherbrooke, Canada</td>
@@ -8790,11 +8242,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Lower Sackville, Canada</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -8830,11 +8280,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Millbrook, Canada</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -8870,11 +8318,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Novalja, Croatia</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -8910,7 +8356,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Hammonds Plains, Canada</td>
@@ -8930,7 +8375,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>New York, United States</td>
@@ -8950,7 +8394,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Massey, Canada</td>
@@ -8970,7 +8413,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Stouffville, Canada</td>
@@ -8990,7 +8432,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Ashburn, United States</td>
@@ -9010,7 +8451,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Rock Hill, United States</td>
@@ -9030,7 +8470,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Summerside, Canada</td>
@@ -9050,7 +8489,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Stockholm, Sweden</td>
@@ -9070,11 +8508,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Rishon LeTsiyyon, Israel</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -9110,7 +8546,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Sidney, Canada</td>
@@ -9130,7 +8565,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Boulder, United States</td>
@@ -9150,7 +8584,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Antigonish, Canada</td>
@@ -9170,7 +8603,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Elliot Lake, Canada</td>
@@ -9190,7 +8622,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Smithers, Canada</td>
@@ -9210,7 +8641,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Wainfleet, Canada</td>
@@ -9230,7 +8660,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Paradise, Canada</td>
@@ -9250,7 +8679,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Qualicum Beach, Canada</td>
@@ -9270,7 +8698,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Ljubljana, Slovenia</td>
@@ -9290,11 +8717,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Brooklyn, United States</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -9330,7 +8755,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Lansdale, United States</td>
@@ -9350,7 +8774,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Keene, United States</td>
@@ -9370,7 +8793,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Coimbatore, India</td>
@@ -9390,7 +8812,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>St Helens, United Kingdom</td>
@@ -9410,7 +8831,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Castro Valley, United States</td>
@@ -9430,7 +8850,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Omaha, United States</td>
@@ -9450,7 +8869,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Prince Albert, Canada</td>
@@ -9470,7 +8888,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Lakewood, United States</td>
@@ -9490,11 +8907,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Harvey Station, Canada</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -9530,7 +8945,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>11</td>
     </tr>
     <tr>
       <td>Cawston, Canada</td>
@@ -9550,7 +8964,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Torbay, Canada</td>
@@ -9570,7 +8983,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Stevensville, Canada</td>
@@ -9590,7 +9002,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Thorold, Canada</td>
@@ -9610,7 +9021,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Charlottesville, United States</td>
@@ -9630,11 +9040,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Edinburgh, United Kingdom</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -9670,7 +9078,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>6</td>
     </tr>
     <tr>
       <td>Hillsborough, United States</td>
@@ -9690,7 +9097,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Braunschweig, Germany</td>
@@ -9709,7 +9115,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
       <td>1</td>
     </tr>
     <tr>
@@ -9730,7 +9135,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Colorado Springs, United States</td>
@@ -9750,7 +9154,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>1</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Richmond Hill, Canada</td>
@@ -9770,7 +9173,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>6</td>
     </tr>
     <tr>
       <td>Strathroy, Canada</td>
@@ -9790,7 +9192,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Saint-Jean-sur-Richelieu, Canada</td>
@@ -9810,7 +9211,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Vankleek Hill, Canada</td>
@@ -9830,7 +9230,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Nashville, United States</td>
@@ -9850,7 +9249,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Banff, Canada</td>
@@ -9870,7 +9268,6 @@ document.write(`
       <td>1</td>
       <td>1</td>
       <td>0</td>
-      <td>6</td>
     </tr>
     <tr>
       <td>Lynnfield, United States</td>
@@ -9890,7 +9287,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
     </tr>
     <tr>
       <td>Niagara-on-the-Lake, Canada</td>
@@ -9910,7 +9306,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>St. Thomas, Canada</td>
@@ -9930,7 +9325,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Mortsel, Belgium</td>
@@ -9950,7 +9344,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>St. Marys, Canada</td>
@@ -9970,7 +9363,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Cheticamp, Canada</td>
@@ -9990,7 +9382,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Avon, United States</td>
@@ -10010,7 +9401,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Nice, France</td>
@@ -10030,11 +9420,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Maple, Canada</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -10070,11 +9458,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Kentville, Canada</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -10110,7 +9496,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Dallas, United States</td>
@@ -10130,7 +9515,6 @@ document.write(`
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Vernon, Canada</td>
@@ -10150,7 +9534,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Grande Cache, Canada</td>
@@ -10170,7 +9553,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
     </tr>
     <tr>
       <td>Wasaga Beach, Canada</td>
@@ -10190,7 +9572,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>1</td>
-      <td>6</td>
     </tr>
     <tr>
       <td>Barraute, Canada</td>
@@ -10210,11 +9591,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Dorval, Canada</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -10250,7 +9629,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Orillia, Canada</td>
@@ -10270,7 +9648,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Los Angeles, United States</td>
@@ -10290,7 +9667,6 @@ document.write(`
       <td>1</td>
       <td>1</td>
       <td>1</td>
-      <td>12</td>
     </tr>
     <tr>
       <td>Freedom, United States</td>
@@ -10310,7 +9686,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Conception Bay South, Canada</td>
@@ -10330,7 +9705,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Dieppe, Canada</td>
@@ -10350,7 +9724,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Mestre, Italy</td>
@@ -10370,11 +9743,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Chelsea, United Kingdom</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -10410,11 +9781,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Berlin, Germany</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -10450,7 +9819,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Burnaby, Canada</td>
@@ -10470,7 +9838,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Chicago, United States</td>
@@ -10490,7 +9857,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Kelowna, Canada</td>
@@ -10510,7 +9876,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Redlands, United States</td>
@@ -10530,7 +9895,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Athol, United States</td>
@@ -10550,7 +9914,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Sydney, Australia</td>
@@ -10570,11 +9933,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <td>Bath, United Kingdom</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -10610,11 +9971,9 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>2</td>
     </tr>
     <tr>
       <td>Moser River, Canada</td>
-      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -10649,7 +10008,6 @@ document.write(`
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
       <td>1</td>
     </tr>
   </tbody>
