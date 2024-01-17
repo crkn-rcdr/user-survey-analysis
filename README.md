@@ -1,6 +1,4 @@
 # user-survey-analysis
-
-
 I wrote a script to clean the data (remove emails, use boolean values to denote if someone selected it or not) and grab the location data, and ignore some rows.
 This scrip can be re-run any time we export data.
 

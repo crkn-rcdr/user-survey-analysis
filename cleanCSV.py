@@ -27,7 +27,7 @@ def get_location(ip_address):
 def parseRaw():
     # Open file  
     with open('raw.csv') as file_obj: 
-        reader_obj = csv.reader(file_obj)
+        reader_obj = csv.reader(file_obj, delimiter = ',')
         i = -1
         for row in reader_obj: 
             i=i+1
