@@ -600,117 +600,11 @@ dtype: int64
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Now, let&#39;s group the data by city and get the count of people in each city</span>
 <span class="n">people_counts</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;city&#39;</span><span class="p">,</span> <span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="s1">&#39;longitude&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;counts&#39;</span><span class="p">)</span>
-<span class="n">people_counts</span>
+
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>city</th>
-      <th>latitude</th>
-      <th>longitude</th>
-      <th>counts</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>100 Mile House</td>
-      <td>51.6498</td>
-      <td>-121.2859</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Aalborg</td>
-      <td>57.0480</td>
-      <td>9.9187</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Abbotsford</td>
-      <td>49.0580</td>
-      <td>-122.2526</td>
-      <td>16</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Abbotsford</td>
-      <td>49.0754</td>
-      <td>-122.1780</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Aberdeen</td>
-      <td>57.1437</td>
-      <td>-2.0981</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>1379</th>
-      <td>Zagreb</td>
-      <td>45.8144</td>
-      <td>15.9780</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1380</th>
-      <td>Zapopan</td>
-      <td>20.7236</td>
-      <td>-103.3848</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1381</th>
-      <td>Zoetermeer</td>
-      <td>52.0575</td>
-      <td>4.4931</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1382</th>
-      <td>Zwolle</td>
-      <td>52.5125</td>
-      <td>6.0944</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1383</th>
-      <td>le Plateau</td>
-      <td>45.4351</td>
-      <td>-75.7803</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-<p>1384 rows × 4 columns</p>
-</div></div></div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
