@@ -598,11 +598,12 @@ dtype: int64
 </div></blockquote>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Now, let&#39;s group the data by city and get the count of people in each city</span>
+<div class="highlight-ipython3 notranslate">
+  <div class="highlight"><pre><span></span>
+    <span class="c1"># Now, let&#39;s group the data by city and get the count of people in each city</span>
 <span class="n">people_counts</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;city&#39;</span><span class="p">,</span> <span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="s1">&#39;longitude&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;counts&#39;</span><span class="p">)</span>
 
 </pre></div>
-</div>
 </div>
 </div>
 </div>
