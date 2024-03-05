@@ -13,3 +13,5 @@ Then I exported the notebook file and set up a jupyter books github pages site h
 https://crkn-rcdr.github.io/user-survey-analysis/notebooks.html
 
 I think if you all have time you should take the cleaned CSV and do some of your own analysis using deepnote! 
+
+Deploy instructions: https://jupyterbook.org/en/stable/start/publish.html
